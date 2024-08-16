@@ -12,4 +12,7 @@ urlpatterns = [
     path('secret/',views.secret),
     path('api-auth-token/', obtain_auth_token), # only accepts http post call
     path('manager-view/',views.manager_view), # only manager should see this
+    path('throttle-check/',views.throttle_check), # thorttle check 
+    path('throttle-check-auth/',views.throttle_check_auth), # throttle check auth users
+    path('throttle-check-custom/',views.throttle_check_custom), # throttle check custom
 ]
