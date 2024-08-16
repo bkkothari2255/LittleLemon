@@ -37,5 +37,12 @@ class CartView(generics.RetrieveUpdateDestroyAPIView):
 def secret(request):
     return Response({"message":"Some Secret Message"})
     
-    
+
+@api_view()
+@permission_classes([IsAuthenticated])
+def manager_view(request):
+    if request.user.groups.filter(name='Manager').exists():
+        return Response({"message":"Only Manager should see this message"})
+    else:   
+        return Response({"message":"You are not authorised"}, 403)
 

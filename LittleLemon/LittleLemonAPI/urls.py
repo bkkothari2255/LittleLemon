@@ -10,5 +10,6 @@ urlpatterns = [
     path('orders/<int:pk>',views.SingleOrderView.as_view()),
     path('cart/menu-items',views.CartView.as_view()),
     path('secret/',views.secret),
-    path('api-auth-token/', obtain_auth_token) # only accepts http post call
+    path('api-auth-token/', obtain_auth_token), # only accepts http post call
+    path('manager-view/',views.manager_view), # only manager should see this
 ]
