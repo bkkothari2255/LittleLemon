@@ -15,6 +15,7 @@ class CategoryView(generics.ListCreateAPIView):
     serializer_class = CategorySerializer
 
 class MenuItemsView(generics.ListCreateAPIView):
+    throttle_classes = [AnonRateThrottle, UserRateThrottle]
     queryset = MenuItem.objects.select_related('category').all()
     serializer_class = MenuItemSerializer
     
