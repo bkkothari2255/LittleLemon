@@ -38,8 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'rest_framework.authtoken',
     'LittleLemonAPI',
-    'debug_toolbar'
+    'debug_toolbar',
+    
 ]
 
 MIDDLEWARE = [
