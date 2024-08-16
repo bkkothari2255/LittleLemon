@@ -8,4 +8,5 @@ urlpatterns = [
     path('orders',views.OrdersView.as_view()),
     path('orders/<int:pk>',views.SingleOrderView.as_view()),
     path('cart/menu-items',views.CartView.as_view()),
+    path('secret/',views.secret)
 ]

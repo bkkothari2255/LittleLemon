@@ -3,7 +3,9 @@ from rest_framework.response import Response
 from rest_framework import generics
 from .models import MenuItem, Category, OrderItem, Cart
 from .serializers import CategorySerializer, MenuItemSerializer, OrderSerializer, CartSerializer
-
+from rest_framework.decorators import api_view
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.decorators import permission_classes
 
 class CategoryView(generics.ListCreateAPIView):
     queryset = Category.objects.all()
@@ -30,6 +32,10 @@ class CartView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = CartSerializer
     
 
+@api_view()
+@permission_classes([IsAuthenticated])
+def secret(request):
+    return Response({"message":"Some Secret Message"})
     
     
 
