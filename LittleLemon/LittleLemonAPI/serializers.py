@@ -1,4 +1,5 @@
 from rest_framework import serializers
+from django.contrib.auth.models import User
 from .models import Cart, Category, MenuItem, Order
 from decimal import Decimal
 
@@ -26,9 +27,19 @@ class OrderSerializer(serializers.ModelSerializer):
         
 
 class CartSerializer(serializers.ModelSerializer):
+    user = serializers.PrimaryKeyRelatedField(
+        queryset= User.objects.all(), default=serializers.CurrentUserDefault()
+    )
+    
     class Meta:
         model = Cart
         fields = ['id','user','menu_item','unit_price','quantity','price']
+        extra_kwargs = {"price": {"read_only": True}}
+        
+        def validate(self, attrs):
+            attrs["price"] = attrs["quantity"] * attrs["unit_price"]
+            return attrs
+
         
         
         
