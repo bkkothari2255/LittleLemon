@@ -1,16 +1,16 @@
 from django.http import JsonResponse
+from django.shortcuts import get_object_or_404
+from  .throttles import TenCallsPerMinute
 from .pagination import MenuItemsPagination, CategoryPagination
 from .permissions import IsDeliveryCrew, IsManager
-from rest_framework import generics
 from .models import MenuItem, Category, OrderItem, Cart
-from .serializers import CategorySerializer, MenuItemSerializer, OrderSerializer, CartSerializer
-#from rest_framework.decorators import api_view
+from .serializers import CategorySerializer, MenuItemSerializer, OrderSerializer, CartSerializer, UserSerializer
+from rest_framework.decorators import api_view
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
-#from rest_framework.decorators import permission_classes, throttle_classes
+from rest_framework.decorators import permission_classes, throttle_classes
 from rest_framework.throttling import AnonRateThrottle, UserRateThrottle
-from .throttles import TenCallsPerMinute
 from django.contrib.auth.models import Group, User
-from rest_framework import viewsets
+from rest_framework import generics
 
 class CategoryView(generics.ListCreateAPIView):
     throttle_classes = [AnonRateThrottle, UserRateThrottle]
@@ -93,9 +93,26 @@ class ManagerView(generics.ListCreateAPIView):
     permission_classes = [IsManager]
     
     
-class UserGroupViewSet(viewsets.ViewSet):
-    permission_classes = [IsAdminUser]
-    
+@api_view(['GET','POST','DELETE'])
+@permission_classes([IsAdminUser])
+@throttle_classes([TenCallsPerMinute])
+def managers(request):
+    if request.method == "GET":
+        users = User.objects.filter(groups__name='Manager')
+        user_serializer = UserSerializer(users,many=True)
+        return JsonResponse(status=200, data=user_serializer.data,safe=False)
+    else:
+        username = request.data['username']
+        if username:
+            user = get_object_or_404(User, username=username)
+            managers = Group.objects.get(name='Manager')
+            if request.method == "POST":
+                managers.user_set.add(user)
+                return JsonResponse(status=201,data={'message':'User {} is added to manager group'.format(str(username))})
+            elif request.method == "DELETE":
+                managers.user_set.remove(user)
+                return JsonResponse(status=201,data={'message':'User {} is removed from manager group'.format(str(username))})   
+    return JsonResponse(status=400,data ={'message':'Bad Request.'})
 
 
 # @api_view()
