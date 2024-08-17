@@ -47,47 +47,47 @@ class CartView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = CartSerializer
     
 
-@api_view()
-@permission_classes([IsAuthenticated])
-def secret(request):
-    return Response({"message":"Some Secret Message"})
+# @api_view()
+# @permission_classes([IsAuthenticated])
+# def secret(request):
+#     return Response({"message":"Some Secret Message"})
 
     
 
-@api_view()
-@permission_classes([IsAuthenticated])
-def manager_view(request):
-    if request.user.groups.filter(name='Manager').exists():
-        return Response({"message":"Only Manager should see this message"})
-    else:   
-        return Response({"message":"You are not authorised"}, 403)
+# @api_view()
+# @permission_classes([IsAuthenticated])
+# def manager_view(request):
+#     if request.user.groups.filter(name='Manager').exists():
+#         return Response({"message":"Only Manager should see this message"})
+#     else:   
+#         return Response({"message":"You are not authorised"}, 403)
     
 
-@api_view()
-@throttle_classes([AnonRateThrottle])
-def throttle_check(request):
-    return Response({"message": "sucessful"})
+# @api_view()
+# @throttle_classes([AnonRateThrottle])
+# def throttle_check(request):
+#     return Response({"message": "sucessful"})
 
-@api_view()
-@permission_classes([IsAuthenticated])
-@throttle_classes([UserRateThrottle])
-def throttle_check_auth(request):
-    return Response({"message":"Message for logged in user"})
+# @api_view()
+# @permission_classes([IsAuthenticated])
+# @throttle_classes([UserRateThrottle])
+# def throttle_check_auth(request):
+#     return Response({"message":"Message for logged in user"})
 
-@api_view()
-@permission_classes([IsAuthenticated])
-@throttle_classes([TenCallsPerMinute])
-def throttle_check_custom(request):
-    return Response({"message":"Message for logged in user 10 call per minute"})
+# @api_view()
+# @permission_classes([IsAuthenticated])
+# @throttle_classes([TenCallsPerMinute])
+# def throttle_check_custom(request):
+#     return Response({"message":"Message for logged in user 10 call per minute"})
 
-@permission_classes([IsAuthenticated])
-class MenuItemsViewSet(viewsets.ModelViewSet):
-    queryset = MenuItem.objects.all()
-    serializer_class = MenuItemSerializer
+# @permission_classes([IsAuthenticated])
+# class MenuItemsViewSet(viewsets.ModelViewSet):
+#     queryset = MenuItem.objects.all()
+#     serializer_class = MenuItemSerializer
     
-    def get_throttles(self):
-        if self.action == 'list':
-            throttle_classes = [UserRateThrottle]
-        else:
-            throttle_classes = []
-        return [throttle() for throttle in throttle_classes]
+#     def get_throttles(self):
+#         if self.action == 'list':
+#             throttle_classes = [UserRateThrottle]
+#         else:
+#             throttle_classes = []
+#         return [throttle() for throttle in throttle_classes]
