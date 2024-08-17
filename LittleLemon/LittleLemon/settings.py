@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'djoser',
     'debug_toolbar',
     'django_filters',
-    'rest_framework_simplejwt'
+    'rest_framework_simplejwt',
+    'rest_framework_simplejwt.token_blacklist',
     
 ]
 
