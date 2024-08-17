@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'LittleLemonAPI',
-    'djsoer',
+    'djoser',
     'debug_toolbar',
     
 ]
