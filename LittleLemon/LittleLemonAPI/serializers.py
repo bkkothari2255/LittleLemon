@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from django.contrib.auth.models import User
-from .models import Cart, Category, MenuItem, Order
+from .models import Cart, Category, MenuItem, Order, OrderItem
 from decimal import Decimal
 
 class CategorySerializer(serializers.ModelSerializer):
@@ -19,8 +19,17 @@ class MenuItemSerializer(serializers.ModelSerializer):
         
     def calculate_tax(self, product:MenuItem):
         return product.price * Decimal(1.1)
+    
+    
+class OrderItemSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = OrderItem
+        fields = ["order", "menuitem", "quantity", "price"]
+     
         
 class OrderSerializer(serializers.ModelSerializer):
+    orderitem = OrderItemSerializer(many=True, read_only=True, source="order")
+    
     class Meta:
         model = Order
         fields = ['id','user','delivery_crew','status','total','date']
@@ -39,7 +48,5 @@ class CartSerializer(serializers.ModelSerializer):
         def validate(self, attrs):
             attrs["price"] = attrs["quantity"] * attrs["unit_price"]
             return attrs
-
-        
         
         
