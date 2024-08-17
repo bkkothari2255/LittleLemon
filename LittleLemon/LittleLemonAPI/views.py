@@ -77,13 +77,39 @@ class SingleOrderView(generics.RetrieveUpdateAPIView, generics.DestroyAPIView):
     queryset = OrderItem.objects.all()
     serializer_class = OrderSerializer
     
-class CartView(generics.ListCreateAPIView,generics.RetrieveUpdateDestroyAPIView):
+class CartView(generics.ListCreateAPIView):
     throttle_classes = [AnonRateThrottle, UserRateThrottle]
     permission_classes= [IsAuthenticated]
-    queryset = Cart.objects.all()
     serializer_class = CartSerializer
     
-
+    def get_queryset(self):
+        queryset = Cart.objects.filter(user=self.request.user)
+        return queryset
+    
+    def post(self, request, *args, **kwargs):
+        seriealized_item = CartSerializer(data=request.data, context={'request':request})
+        seriealized_item.is_valid(raise_exception=True)
+        menu_item_id = request.data['menu_item']
+        quantity = request.data['quantity']
+        item = get_object_or_404(MenuItem,id=menu_item_id)
+        unit_price = item.price
+        price = int(quantity) * unit_price
+        try:
+            Cart.objects.create(user=request.user,menu_item_id=menu_item_id,quantity=quantity,unit_price=unit_price,price=price)
+        except:
+            return JsonResponse(status=409, data={"message":"Items already in the cart."})
+        return JsonResponse(status=201, data={"message":"Item added to the cart"})
+    
+    def delete(self, request, *args, **kwargs):
+        if request.POST.get('menu_item'):
+            menu_item_id = request.data['menu_item']
+            cart = get_object_or_404(Cart,user=request.user,menu_item_id=menu_item_id)
+            cart.delete()
+            return JsonResponse(status=200, data={"message":"Menu Item deleted from the cart."})
+        else:
+            Cart.objects.filter(user=request.user).delete()
+            return JsonResponse(status=200, data={"message":"Cart is empty"})
+    
 class DeliveryCrewView(generics.RetrieveUpdateAPIView):
     throttle_classes = [AnonRateThrottle,UserRateThrottle]
     permission_classes = [IsDeliveryCrew]
