@@ -15,6 +15,7 @@ class CategoryView(generics.ListCreateAPIView):
 
 class MenuItemsView(generics.ListCreateAPIView):
     throttle_classes = [AnonRateThrottle, UserRateThrottle]
+    permission_classes= [IsAuthenticated]
     queryset = MenuItem.objects.select_related('category').all()
     serializer_class = MenuItemSerializer
     search_fields = ['title','category__title']
@@ -23,21 +24,25 @@ class MenuItemsView(generics.ListCreateAPIView):
     
 class SingleMenuItemView(generics.RetrieveUpdateAPIView,generics.DestroyAPIView):
     throttle_classes = [AnonRateThrottle, UserRateThrottle]
+    permission_classes= [IsAuthenticated]
     queryset = MenuItem.objects.all()
     serializer_class = MenuItemSerializer
     
 class OrdersView(generics.ListCreateAPIView):
     throttle_classes = [AnonRateThrottle, UserRateThrottle]
+    permission_classes= [IsAuthenticated]
     queryset = OrderItem.objects.all()
     serializer_class = OrderSerializer
     
 class SingleOrderView(generics.RetrieveUpdateAPIView, generics.DestroyAPIView):
     throttle_classes = [AnonRateThrottle, UserRateThrottle] 
+    permission_classes= [IsAuthenticated]
     queryset = OrderItem.objects.all()
     serializer_class = OrderSerializer
     
 class CartView(generics.RetrieveUpdateDestroyAPIView):
     throttle_classes = [AnonRateThrottle, UserRateThrottle]
+    permission_classes= [IsAuthenticated]
     queryset = Cart.objects.all()
     serializer_class = CartSerializer
     
