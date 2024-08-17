@@ -1,4 +1,3 @@
-import django.db
 from rest_framework import serializers
 from .models import Cart, Category, MenuItem, Order
 from decimal import Decimal

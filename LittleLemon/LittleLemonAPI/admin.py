@@ -1,9 +1,5 @@
 from django.contrib import admin
-from .models import MenuItem
-from .models import Category
-from .models import Cart
-from .models import Order
-from .models import OrderItem
+from .models import MenuItem, Category, Cart, Order, OrderItem
 
 admin.site.register(Category)
 admin.site.register(MenuItem)
