@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User, Group
 from .models import Cart, Category, MenuItem, Order, OrderItem
 from decimal import Decimal
 
@@ -49,4 +49,8 @@ class CartSerializer(serializers.ModelSerializer):
             attrs["price"] = attrs["quantity"] * attrs["unit_price"]
             return attrs
         
-        
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ['id','username','email',]  
+ 
