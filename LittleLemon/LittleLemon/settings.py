@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'LittleLemonAPI',
+    'djsoer',
     'debug_toolbar',
     
 ]
@@ -140,6 +141,7 @@ REST_FRAMEWORK = {
     ],
     'DEFAULT_AUTHENTICATION_CLASSES':[
         'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
     ],
     'DEFAULT_THROTTLE_CLASSES': [
         'rest_framework.throttling.AnonRateThrottle',
@@ -150,4 +152,9 @@ REST_FRAMEWORK = {
         'user':'10/minute',
         'ten': '10/minute',
     }
+}
+
+DJOSER = {
+    "USER_ID_FIELD":"username"
+    
 }
