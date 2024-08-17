@@ -10,6 +10,7 @@ django-debug-toolbar = "*"
 djangorestframework-xml = "*"
 djoser = "*"
 django-filter = "==2.3.0"
+djangorestframework-simplejwt = "~=5.2.1"
 
 [dev-packages]
 
