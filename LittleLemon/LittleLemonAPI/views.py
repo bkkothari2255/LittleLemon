@@ -18,6 +18,9 @@ class MenuItemsView(generics.ListCreateAPIView):
     throttle_classes = [AnonRateThrottle, UserRateThrottle]
     queryset = MenuItem.objects.select_related('category').all()
     serializer_class = MenuItemSerializer
+    search_fields = ['title','category__title']
+    ordering_fields = ['price','category']
+    filterset_fields = ['category']
     
 class SingleMenuItemView(generics.RetrieveUpdateAPIView,generics.DestroyAPIView):
     throttle_classes = [AnonRateThrottle, UserRateThrottle]
