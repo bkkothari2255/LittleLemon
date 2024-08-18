@@ -27,7 +27,9 @@ class Cart(models.Model):
     
     class Meta:
         unique_together = ('menu_item','user')
-        
+    
+    def __str__(self):
+        return self.user.username + " | " + self.menu_item.title
         
 class Order(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -35,6 +37,10 @@ class Order(models.Model):
     status = models.BooleanField(db_index=True,default=0)
     total = models.DecimalField(max_digits=6,decimal_places=2)
     date = models.DateField(db_index=True)
+    time = models.TimeField(db_index=True,null=True)
+    
+    def __str__(self):
+        return 'ODR#'+str(self.id)+"-D"+str(self.date).replace('-','')+"T"+str(self.time).replace(':','')
     
 class OrderItem(models.Model):
     order = models.ForeignKey(User, on_delete=models.CASCADE)
