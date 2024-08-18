@@ -1,3 +1,4 @@
+from datetime import datetime, time,date
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404
 from .throttles import TenCallsPerMinute
@@ -11,6 +12,7 @@ from rest_framework.decorators import permission_classes, throttle_classes
 from rest_framework.throttling import AnonRateThrottle, UserRateThrottle
 from django.contrib.auth.models import Group, User
 from rest_framework import generics
+import math
 
 class CategoryView(generics.ListCreateAPIView):
     throttle_classes = [AnonRateThrottle, UserRateThrottle]
@@ -67,16 +69,38 @@ class SingleMenuItemView(generics.RetrieveUpdateAPIView,generics.DestroyAPIView)
         
 class OrdersView(generics.ListCreateAPIView):
     throttle_classes = [AnonRateThrottle, UserRateThrottle]
-    permission_classes= [IsAuthenticated]
     serializer_class = OrderSerializer
     
-    def get(self, request, *args, **kwargs):
-        queryset = Order.objects.filter(user=request.user)
-        serializer_class = OrderSerializer(queryset,many=True)
-        return JsonResponse(status=200, data=serializer_class.data, safe=False)
+    def get_queryset(self):
+        if self.request.user.groups.filter(name="Manager").exists():
+            queryset = Order.objects.all()
+        elif self.request.user.groups.filter(name='Delivery Crew').exists():
+            queryset = Order.objects.filter(delivery_crew=self.request.user)
+        else:
+            queryset = Order.objects.filter(user=self.request.user)
+        
+        return queryset
+    
+    def get_permissions(self):
+        if self.request.method == 'GET' or 'POST' : 
+            permission_classes = [IsAuthenticated]
+        else:
+            permission_classes = [IsAuthenticated, IsManager | IsAdminUser]
+        return[permission() for permission in permission_classes]
     
     def post(self, request, *args, **kwargs):
-        pass
+        cart = Cart.objects.filter(user=request.user)
+        x=cart.values_list()
+        if len(x) == 0:
+            return JsonResponse(status=400, data={'message':'Bad Request.'})
+        total = math.fsum([float(x[-1]) for x in x])
+        order = Order.objects.create(user=request.user, status=False, total=total, date=date.today(), time=datetime.now().time())
+        for i in cart.values():
+            menu_item = get_object_or_404(MenuItem, id=i['menu_item_id'])
+            orderitem = OrderItem.objects.create(order=self.request.user, menu_item=menu_item, quantity=i['quantity'])
+            orderitem.save()
+        cart.delete()
+        return JsonResponse(status=201, data={'message':'Your order has been placed! Your order number starting with ODR#{}'.format(str(order.id))})
     
 class SingleOrderView(generics.RetrieveUpdateAPIView, generics.DestroyAPIView):
     throttle_classes = [AnonRateThrottle, UserRateThrottle] 
