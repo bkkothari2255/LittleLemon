@@ -1,9 +1,9 @@
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404
-from  .throttles import TenCallsPerMinute
+from .throttles import TenCallsPerMinute
 from .pagination import MenuItemsPagination, CategoryPagination
 from .permissions import IsDeliveryCrew, IsManager
-from .models import MenuItem, Category, OrderItem, Cart
+from .models import Cart, Category, MenuItem, Order, OrderItem
 from .serializers import CategorySerializer, MenuItemSerializer, OrderSerializer, CartSerializer, UserSerializer
 from rest_framework.decorators import api_view
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
@@ -68,8 +68,15 @@ class SingleMenuItemView(generics.RetrieveUpdateAPIView,generics.DestroyAPIView)
 class OrdersView(generics.ListCreateAPIView):
     throttle_classes = [AnonRateThrottle, UserRateThrottle]
     permission_classes= [IsAuthenticated]
-    queryset = OrderItem.objects.all()
     serializer_class = OrderSerializer
+    
+    def get(self, request, *args, **kwargs):
+        queryset = Order.objects.filter(user=request.user)
+        serializer_class = OrderSerializer(queryset,many=True)
+        return JsonResponse(status=200, data=serializer_class.data, safe=False)
+    
+    def post(self, request, *args, **kwargs):
+        pass
     
 class SingleOrderView(generics.RetrieveUpdateAPIView, generics.DestroyAPIView):
     throttle_classes = [AnonRateThrottle, UserRateThrottle] 
