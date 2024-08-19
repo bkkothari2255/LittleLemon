@@ -8,3 +8,23 @@ Luffy/SunGodNika
 Robin/DemonChild
 Chopper/CottonCandyLover
 Brook/SoulKing
+
+
+Steps to Evalute
+Assuming you already have pipenv installed.
+
+1. pipenv shell
+
+2. pipenv install -r requirements.txt
+
+3. python manage.py makemigrations 
+
+4. python manage.py migrate
+
+5. python manage.py runserver
+
+Note : To enable admin login via browser uncomment setting line 151
+
+6. Use Little_Lemon_API_Week_4 Insomnia collection to evaluate every tasks
+
+7. Switch request methods or tokens in auth as per need
