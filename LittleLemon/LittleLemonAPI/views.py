@@ -92,13 +92,16 @@ class OrdersView(generics.ListCreateAPIView):
         cart = Cart.objects.filter(user=request.user)
         x=cart.values_list()
         if len(x) == 0:
-            return JsonResponse(status=400, data={'message':'Bad Request.'})
-        total = math.fsum([float(x[-1]) for x in x])
+            return JsonResponse(status=400, data={'message':'Bad Request due to cart is empty.'})
+        total = math.fsum([float(x[-1]) for x in x])       
         order = Order.objects.create(user=request.user, status=False, total=total, date=date.today(), time=datetime.now().time())
         for i in cart.values():
-            menu_item = get_object_or_404(MenuItem, id=i['menu_item_id'])
-            orderitem = OrderItem.objects.create(order=self.request.user, menu_item=menu_item, quantity=i['quantity'])
-            orderitem.save()
+            try:
+                menu_item = get_object_or_404(MenuItem, id=i['menu_item_id'])
+                orderitem = OrderItem.objects.create(order=order,menu_item=menu_item,quantity=i['quantity'])
+                orderitem.save()
+            except:
+                return JsonResponse(status="409",data={'message':'Order already placed..'})
         cart.delete()
         return JsonResponse(status=201, data={'message':'Your order has been placed! Your order number starting with ODR#{}'.format(str(order.id))})
     
