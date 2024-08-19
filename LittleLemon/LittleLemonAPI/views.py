@@ -113,15 +113,28 @@ class SingleOrderView(generics.RetrieveUpdateAPIView, generics.DestroyAPIView):
         permission_classes = []
         if self.request.method == 'GET':
             permission_classes = [IsAuthenticated]  
-        elif self.request.method == 'PATCH':
-            permission_classes = [IsAuthenticated, IsManager | IsDeliveryCrew]
-                     
+                 
         return [permission() for permission in permission_classes] 
     
     def get_queryset(self,*args,**kwargs):
         queryset = Order.objects.filter(id=self.kwargs['pk'])
         return queryset
+    
+    def patch(self,*args,**kwargs):
+        if self.request.user.groups.filter(name='Delivery Crew').exists():
+            order = Order.objects.get(pk=self.kwargs['pk'])
+            order.status = not order.status
+            order.save()
+            return JsonResponse(status=200, data={'meassage':'Order Status changed to {}'.format( 'delivered' if order.status else 'not delivered.')})
         
+        elif self.request.user.groups.filter(name='Manager').exists():
+            order = Order.objects.get(pk=self.kwargs['pk'])
+            id = self.request.data['delivery_crew']
+            order.delivery_crew = User.objects.get(id=id)
+            order.save()
+            return JsonResponse(status=200,data={'message':'Assigned order {} to {}'.format(order, order.delivery_crew.username)})
+        else:
+            return JsonResponse(status=404, data={'message':"No order found."})
     
 class CartView(generics.ListCreateAPIView):
     throttle_classes = [AnonRateThrottle, UserRateThrottle]
