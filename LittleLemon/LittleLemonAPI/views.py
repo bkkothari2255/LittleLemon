@@ -107,9 +107,21 @@ class OrdersView(generics.ListCreateAPIView):
     
 class SingleOrderView(generics.RetrieveUpdateAPIView, generics.DestroyAPIView):
     throttle_classes = [AnonRateThrottle, UserRateThrottle] 
-    permission_classes= [IsAuthenticated]
-    queryset = OrderItem.objects.all()
     serializer_class = OrderSerializer
+    
+    def get_permissions(self):
+        permission_classes = []
+        if self.request.method == 'GET':
+            permission_classes = [IsAuthenticated]  
+        elif self.request.method == 'PATCH':
+            permission_classes = [IsAuthenticated, IsManager | IsDeliveryCrew]
+                     
+        return [permission() for permission in permission_classes] 
+    
+    def get_queryset(self,*args,**kwargs):
+        queryset = Order.objects.filter(id=self.kwargs['pk'])
+        return queryset
+        
     
 class CartView(generics.ListCreateAPIView):
     throttle_classes = [AnonRateThrottle, UserRateThrottle]
