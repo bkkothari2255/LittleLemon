@@ -44,7 +44,7 @@ class CartSerializer(serializers.ModelSerializer):
         model = Cart
         fields = ['id','user','menu_item','unit_price','quantity','price']
         extra_kwargs = {"price": {"read_only": True}}
-        
+        depth = 1
         def validate(self, attrs):
             attrs["price"] = attrs["quantity"] * attrs["unit_price"]
             return attrs
