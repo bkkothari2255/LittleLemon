@@ -1,0 +1,1060 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "Group",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "Group",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "pagination",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "permissions",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "generics",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "Decimal",
+        "importPath": "decimal",
+        "description": "decimal",
+        "isExtraImport": true,
+        "detail": "decimal",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "UserRateThrottle",
+        "importPath": "rest_framework.throttling",
+        "description": "rest_framework.throttling",
+        "isExtraImport": true,
+        "detail": "rest_framework.throttling",
+        "documentation": {}
+    },
+    {
+        "label": "AnonRateThrottle",
+        "importPath": "rest_framework.throttling",
+        "description": "rest_framework.throttling",
+        "isExtraImport": true,
+        "detail": "rest_framework.throttling",
+        "documentation": {}
+    },
+    {
+        "label": "UserRateThrottle",
+        "importPath": "rest_framework.throttling",
+        "description": "rest_framework.throttling",
+        "isExtraImport": true,
+        "detail": "rest_framework.throttling",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "api_view",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "permission_classes",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "throttle_classes",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "IsAuthenticated",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "IsAdminUser",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "LittleLemon.LittleLemon.asgi",
+        "description": "LittleLemon.LittleLemon.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "LittleLemon.LittleLemon.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "LittleLemon.LittleLemon.settings",
+        "description": "LittleLemon.LittleLemon.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-irku*@h7%o&c=043#3-xh&30it0@_)x+toliq#45#o!s*2s%&)'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "LittleLemon.LittleLemon.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "LittleLemon.LittleLemon.settings",
+        "description": "LittleLemon.LittleLemon.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-irku*@h7%o&c=043#3-xh&30it0@_)x+toliq#45#o!s*2s%&)'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "LittleLemon.LittleLemon.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "LittleLemon.LittleLemon.settings",
+        "description": "LittleLemon.LittleLemon.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "LittleLemon.LittleLemon.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "LittleLemon.LittleLemon.settings",
+        "description": "LittleLemon.LittleLemon.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',",
+        "detail": "LittleLemon.LittleLemon.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "LittleLemon.LittleLemon.settings",
+        "description": "LittleLemon.LittleLemon.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',\n    'rest_framework.authtoken',\n    'LittleLemonAPI',",
+        "detail": "LittleLemon.LittleLemon.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "LittleLemon.LittleLemon.settings",
+        "description": "LittleLemon.LittleLemon.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n    'debug_toolbar.middleware.DebugToolbarMiddleware',  \n]",
+        "detail": "LittleLemon.LittleLemon.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "LittleLemon.LittleLemon.settings",
+        "description": "LittleLemon.LittleLemon.settings",
+        "peekOfCode": "ROOT_URLCONF = 'LittleLemon.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "LittleLemon.LittleLemon.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "LittleLemon.LittleLemon.settings",
+        "description": "LittleLemon.LittleLemon.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "LittleLemon.LittleLemon.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "LittleLemon.LittleLemon.settings",
+        "description": "LittleLemon.LittleLemon.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'LittleLemon.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.0/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "detail": "LittleLemon.LittleLemon.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "LittleLemon.LittleLemon.settings",
+        "description": "LittleLemon.LittleLemon.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "LittleLemon.LittleLemon.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "LittleLemon.LittleLemon.settings",
+        "description": "LittleLemon.LittleLemon.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "LittleLemon.LittleLemon.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "LittleLemon.LittleLemon.settings",
+        "description": "LittleLemon.LittleLemon.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "LittleLemon.LittleLemon.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "LittleLemon.LittleLemon.settings",
+        "description": "LittleLemon.LittleLemon.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nINTERNAL_IPS = [",
+        "detail": "LittleLemon.LittleLemon.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "LittleLemon.LittleLemon.settings",
+        "description": "LittleLemon.LittleLemon.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nINTERNAL_IPS = [\n    '127.0.0.1'",
+        "detail": "LittleLemon.LittleLemon.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "LittleLemon.LittleLemon.settings",
+        "description": "LittleLemon.LittleLemon.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nINTERNAL_IPS = [\n    '127.0.0.1'\n]",
+        "detail": "LittleLemon.LittleLemon.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "LittleLemon.LittleLemon.settings",
+        "description": "LittleLemon.LittleLemon.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nINTERNAL_IPS = [\n    '127.0.0.1'\n]\nREST_FRAMEWORK = {\n    'DEFAULT_RENDERER_CLASSES': [\n        'rest_framework.renderers.JSONRenderer',",
+        "detail": "LittleLemon.LittleLemon.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "LittleLemon.LittleLemon.settings",
+        "description": "LittleLemon.LittleLemon.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nINTERNAL_IPS = [\n    '127.0.0.1'\n]\nREST_FRAMEWORK = {\n    'DEFAULT_RENDERER_CLASSES': [\n        'rest_framework.renderers.JSONRenderer',\n        'rest_framework.renderers.BrowsableAPIRenderer',\n        'rest_framework_xml.renderers.XMLRenderer',\n    ],",
+        "detail": "LittleLemon.LittleLemon.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INTERNAL_IPS",
+        "kind": 5,
+        "importPath": "LittleLemon.LittleLemon.settings",
+        "description": "LittleLemon.LittleLemon.settings",
+        "peekOfCode": "INTERNAL_IPS = [\n    '127.0.0.1'\n]\nREST_FRAMEWORK = {\n    'DEFAULT_RENDERER_CLASSES': [\n        'rest_framework.renderers.JSONRenderer',\n        'rest_framework.renderers.BrowsableAPIRenderer',\n        'rest_framework_xml.renderers.XMLRenderer',\n    ],\n    'DEFAULT_FILTER_BACKENDS': [",
+        "detail": "LittleLemon.LittleLemon.settings",
+        "documentation": {}
+    },
+    {
+        "label": "REST_FRAMEWORK",
+        "kind": 5,
+        "importPath": "LittleLemon.LittleLemon.settings",
+        "description": "LittleLemon.LittleLemon.settings",
+        "peekOfCode": "REST_FRAMEWORK = {\n    'DEFAULT_RENDERER_CLASSES': [\n        'rest_framework.renderers.JSONRenderer',\n        'rest_framework.renderers.BrowsableAPIRenderer',\n        'rest_framework_xml.renderers.XMLRenderer',\n    ],\n    'DEFAULT_FILTER_BACKENDS': [\n        'django_filters.rest_framework.DjangoFilterBackend',\n        'rest_framework.filters.OrderingFilter',\n        'rest_framework.filters.SearchFilter',",
+        "detail": "LittleLemon.LittleLemon.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DJOSER",
+        "kind": 5,
+        "importPath": "LittleLemon.LittleLemon.settings",
+        "description": "LittleLemon.LittleLemon.settings",
+        "peekOfCode": "DJOSER = {\n    \"USER_ID_FIELD\":\"username\"\n}",
+        "detail": "LittleLemon.LittleLemon.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "LittleLemon.LittleLemon.urls",
+        "description": "LittleLemon.LittleLemon.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('api/',include('LittleLemonAPI.urls')),\n    path('__debug__/',include('debug_toolbar.urls')),\n    path('auth/',include('djoser.urls')),\n    path('auth/',include('djoser.urls.authtoken')),\n    # path('api/token/',TokenObtainPairView.as_view(),name='token_obtain_pair'),\n    # path('api/token/refresh/',TokenRefreshView.as_view(),name = 'token_refresh'),\n    # path('api/token/blacklist',TokenBlacklistView.as_view(),name= 'token_blacklist'),\n]",
+        "detail": "LittleLemon.LittleLemon.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "LittleLemon.LittleLemon.wsgi",
+        "description": "LittleLemon.LittleLemon.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "LittleLemon.LittleLemon.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "LittleLemon.LittleLemonAPI.migrations.0001_initial",
+        "description": "LittleLemon.LittleLemonAPI.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Category',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "LittleLemon.LittleLemonAPI.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "LittleLemon.LittleLemonAPI.migrations.0002_alter_category_title_alter_menuitem_category",
+        "description": "LittleLemon.LittleLemonAPI.migrations.0002_alter_category_title_alter_menuitem_category",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('LittleLemonAPI', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='category',\n            name='title',\n            field=models.CharField(db_index=True, default=1, max_length=255),\n        ),",
+        "detail": "LittleLemon.LittleLemonAPI.migrations.0002_alter_category_title_alter_menuitem_category",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "LittleLemon.LittleLemonAPI.migrations.0003_remove_cart_unit_price",
+        "description": "LittleLemon.LittleLemonAPI.migrations.0003_remove_cart_unit_price",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('LittleLemonAPI', '0002_alter_category_title_alter_menuitem_category'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='cart',\n            name='unit_price',\n        ),\n    ]",
+        "detail": "LittleLemon.LittleLemonAPI.migrations.0003_remove_cart_unit_price",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "LittleLemon.LittleLemonAPI.migrations.0004_cart_unit_price",
+        "description": "LittleLemon.LittleLemonAPI.migrations.0004_cart_unit_price",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('LittleLemonAPI', '0003_remove_cart_unit_price'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='cart',\n            name='unit_price',\n            field=models.DecimalField(decimal_places=2, default=2.0, max_digits=6),\n        ),",
+        "detail": "LittleLemon.LittleLemonAPI.migrations.0004_cart_unit_price",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "LittleLemon.LittleLemonAPI.migrations.0005_alter_cart_unit_price",
+        "description": "LittleLemon.LittleLemonAPI.migrations.0005_alter_cart_unit_price",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('LittleLemonAPI', '0004_cart_unit_price'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='cart',\n            name='unit_price',\n            field=models.DecimalField(decimal_places=2, max_digits=6),\n        ),",
+        "detail": "LittleLemon.LittleLemonAPI.migrations.0005_alter_cart_unit_price",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "LittleLemon.LittleLemonAPI.migrations.0006_alter_cart_unit_price",
+        "description": "LittleLemon.LittleLemonAPI.migrations.0006_alter_cart_unit_price",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('LittleLemonAPI', '0005_alter_cart_unit_price'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='cart',\n            name='unit_price',\n            field=models.DecimalField(decimal_places=2, default=0, max_digits=6),\n        ),",
+        "detail": "LittleLemon.LittleLemonAPI.migrations.0006_alter_cart_unit_price",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "LittleLemon.LittleLemonAPI.migrations.0007_alter_cart_unit_price",
+        "description": "LittleLemon.LittleLemonAPI.migrations.0007_alter_cart_unit_price",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('LittleLemonAPI', '0006_alter_cart_unit_price'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='cart',\n            name='unit_price',\n            field=models.DecimalField(decimal_places=2, max_digits=6, null=True),\n        ),",
+        "detail": "LittleLemon.LittleLemonAPI.migrations.0007_alter_cart_unit_price",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "LittleLemon.LittleLemonAPI.migrations.0008_order_time",
+        "description": "LittleLemon.LittleLemonAPI.migrations.0008_order_time",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('LittleLemonAPI', '0007_alter_cart_unit_price'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='order',\n            name='time',\n            field=models.TimeField(db_index=True, null=True),\n        ),",
+        "detail": "LittleLemon.LittleLemonAPI.migrations.0008_order_time",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "LittleLemon.LittleLemonAPI.migrations.0009_remove_orderitem_price_remove_orderitem_unit_price",
+        "description": "LittleLemon.LittleLemonAPI.migrations.0009_remove_orderitem_price_remove_orderitem_unit_price",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('LittleLemonAPI', '0008_order_time'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='orderitem',\n            name='price',\n        ),\n        migrations.RemoveField(",
+        "detail": "LittleLemon.LittleLemonAPI.migrations.0009_remove_orderitem_price_remove_orderitem_unit_price",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "LittleLemon.LittleLemonAPI.migrations.0010_alter_orderitem_order",
+        "description": "LittleLemon.LittleLemonAPI.migrations.0010_alter_orderitem_order",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('LittleLemonAPI', '0009_remove_orderitem_price_remove_orderitem_unit_price'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='orderitem',\n            name='order',\n            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='LittleLemonAPI.order'),\n        ),",
+        "detail": "LittleLemon.LittleLemonAPI.migrations.0010_alter_orderitem_order",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "LittleLemon.LittleLemonAPI.migrations.0011_alter_order_delivery_crew",
+        "description": "LittleLemon.LittleLemonAPI.migrations.0011_alter_order_delivery_crew",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('LittleLemonAPI', '0010_alter_orderitem_order'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='order',\n            name='delivery_crew',\n            field=models.ForeignKey(limit_choices_to={'groups_name': 'Delivery Crew'}, null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='delivry_crew', to=settings.AUTH_USER_MODEL),",
+        "detail": "LittleLemon.LittleLemonAPI.migrations.0011_alter_order_delivery_crew",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "LittleLemon.LittleLemonAPI.migrations.0012_alter_order_delivery_crew",
+        "description": "LittleLemon.LittleLemonAPI.migrations.0012_alter_order_delivery_crew",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('LittleLemonAPI', '0011_alter_order_delivery_crew'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='order',\n            name='delivery_crew',\n            field=models.ForeignKey(limit_choices_to={'groups__name': 'Delivery Crew'}, null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='delivry_crew', to=settings.AUTH_USER_MODEL),",
+        "detail": "LittleLemon.LittleLemonAPI.migrations.0012_alter_order_delivery_crew",
+        "documentation": {}
+    },
+    {
+        "label": "LittlelemonapiConfig",
+        "kind": 6,
+        "importPath": "LittleLemon.LittleLemonAPI.apps",
+        "description": "LittleLemon.LittleLemonAPI.apps",
+        "peekOfCode": "class LittlelemonapiConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'LittleLemonAPI'",
+        "detail": "LittleLemon.LittleLemonAPI.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "kind": 6,
+        "importPath": "LittleLemon.LittleLemonAPI.models",
+        "description": "LittleLemon.LittleLemonAPI.models",
+        "peekOfCode": "class Category(models.Model):\n    slug = models.SlugField()\n    title = models.CharField(max_length=255, db_index=True,default=1)\n    def __str__(self):\n        return self.title\nclass MenuItem(models.Model):\n    title = models.CharField(max_length=255)\n    price = models.DecimalField(max_digits=6, decimal_places=2)\n    featured = models.BooleanField(db_index=True)\n    category = models.ForeignKey(Category, on_delete=models.PROTECT,default=1)",
+        "detail": "LittleLemon.LittleLemonAPI.models",
+        "documentation": {}
+    },
+    {
+        "label": "MenuItem",
+        "kind": 6,
+        "importPath": "LittleLemon.LittleLemonAPI.models",
+        "description": "LittleLemon.LittleLemonAPI.models",
+        "peekOfCode": "class MenuItem(models.Model):\n    title = models.CharField(max_length=255)\n    price = models.DecimalField(max_digits=6, decimal_places=2)\n    featured = models.BooleanField(db_index=True)\n    category = models.ForeignKey(Category, on_delete=models.PROTECT,default=1)\n    def __str__(self):\n        return self.title\nclass Cart(models.Model):\n    user = models.ForeignKey(User, on_delete=models.CASCADE)\n    menu_item = models.ForeignKey(MenuItem, on_delete=models.CASCADE)",
+        "detail": "LittleLemon.LittleLemonAPI.models",
+        "documentation": {}
+    },
+    {
+        "label": "Cart",
+        "kind": 6,
+        "importPath": "LittleLemon.LittleLemonAPI.models",
+        "description": "LittleLemon.LittleLemonAPI.models",
+        "peekOfCode": "class Cart(models.Model):\n    user = models.ForeignKey(User, on_delete=models.CASCADE)\n    menu_item = models.ForeignKey(MenuItem, on_delete=models.CASCADE)\n    quantity = models.SmallIntegerField()\n    unit_price = models.DecimalField(max_digits=6, decimal_places=2,null=True)\n    price = models.DecimalField(max_digits=6,decimal_places=2)\n    class Meta:\n        unique_together = ('menu_item','user')\n    def __str__(self):\n        return self.user.username + \" | \" + self.menu_item.title",
+        "detail": "LittleLemon.LittleLemonAPI.models",
+        "documentation": {}
+    },
+    {
+        "label": "Order",
+        "kind": 6,
+        "importPath": "LittleLemon.LittleLemonAPI.models",
+        "description": "LittleLemon.LittleLemonAPI.models",
+        "peekOfCode": "class Order(models.Model):\n    user = models.ForeignKey(User, on_delete=models.CASCADE)\n    delivery_crew = models.ForeignKey(User, on_delete=models.SET_NULL, related_name=\"delivry_crew\", limit_choices_to={'groups__name':'Delivery Crew'},null=True)\n    status = models.BooleanField(db_index=True,default=0)\n    total = models.DecimalField(max_digits=6,decimal_places=2)\n    date = models.DateField(db_index=True)\n    time = models.TimeField(db_index=True,null=True)\n    def __str__(self):\n        return 'ODR#'+str(self.id)+\"-D\"+str(self.date).replace('-','')+\"T\"+str(self.time).replace(':','')\nclass OrderItem(models.Model):",
+        "detail": "LittleLemon.LittleLemonAPI.models",
+        "documentation": {}
+    },
+    {
+        "label": "OrderItem",
+        "kind": 6,
+        "importPath": "LittleLemon.LittleLemonAPI.models",
+        "description": "LittleLemon.LittleLemonAPI.models",
+        "peekOfCode": "class OrderItem(models.Model):\n    order = models.ForeignKey(Order, on_delete=models.CASCADE)\n    menu_item = models.ForeignKey(MenuItem, on_delete=models.CASCADE)\n    quantity = models.SmallIntegerField()\n    class Meta:\n        unique_together = ('order', 'menu_item')\n    def __str__(self):\n        return self.order.user.username + \" | \" + self.menu_item.title",
+        "detail": "LittleLemon.LittleLemonAPI.models",
+        "documentation": {}
+    },
+    {
+        "label": "MenuItemsPagination",
+        "kind": 6,
+        "importPath": "LittleLemon.LittleLemonAPI.pagination",
+        "description": "LittleLemon.LittleLemonAPI.pagination",
+        "peekOfCode": "class MenuItemsPagination(pagination.PageNumberPagination):\n    page_size = 5\n    page_size_query_param = 'perpage'\n    max_page_size = 50\n    page_query_param = 'page'\nclass CategoryPagination(pagination.PageNumberPagination):\n    page_size = 5\n    page_size_query_param = 'perpage'\n    max_page_size = 20\n    page_query_param = 'page'",
+        "detail": "LittleLemon.LittleLemonAPI.pagination",
+        "documentation": {}
+    },
+    {
+        "label": "CategoryPagination",
+        "kind": 6,
+        "importPath": "LittleLemon.LittleLemonAPI.pagination",
+        "description": "LittleLemon.LittleLemonAPI.pagination",
+        "peekOfCode": "class CategoryPagination(pagination.PageNumberPagination):\n    page_size = 5\n    page_size_query_param = 'perpage'\n    max_page_size = 20\n    page_query_param = 'page'",
+        "detail": "LittleLemon.LittleLemonAPI.pagination",
+        "documentation": {}
+    },
+    {
+        "label": "IsDeliveryCrew",
+        "kind": 6,
+        "importPath": "LittleLemon.LittleLemonAPI.permissions",
+        "description": "LittleLemon.LittleLemonAPI.permissions",
+        "peekOfCode": "class IsDeliveryCrew(permissions.BasePermission):\n    edit_methods = ('put','patch')\n    def has_permission(self, request, view):\n        if request.user.groups.filter(name=\"Delivery Crew\").exists():\n            return True\nclass IsManager(permissions.BasePermission):\n    edit_methods = ('put','patch','post')\n    def has_permission(self, request, view):\n        if request.user.groups.filter(name=\"Manager\").exists():\n            return True",
+        "detail": "LittleLemon.LittleLemonAPI.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "IsManager",
+        "kind": 6,
+        "importPath": "LittleLemon.LittleLemonAPI.permissions",
+        "description": "LittleLemon.LittleLemonAPI.permissions",
+        "peekOfCode": "class IsManager(permissions.BasePermission):\n    edit_methods = ('put','patch','post')\n    def has_permission(self, request, view):\n        if request.user.groups.filter(name=\"Manager\").exists():\n            return True",
+        "detail": "LittleLemon.LittleLemonAPI.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "CategorySerializer",
+        "kind": 6,
+        "importPath": "LittleLemon.LittleLemonAPI.serializers",
+        "description": "LittleLemon.LittleLemonAPI.serializers",
+        "peekOfCode": "class CategorySerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Category\n        fields = ['id','slug','title']\nclass MenuItemSerializer(serializers.ModelSerializer):\n    category = serializers.PrimaryKeyRelatedField(queryset=Category.objects.all())\n    #category = CategorySerializer()\n    price_after_tax = serializers.SerializerMethodField(method_name = 'calculate_tax')\n    class Meta:\n        model = MenuItem",
+        "detail": "LittleLemon.LittleLemonAPI.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "MenuItemSerializer",
+        "kind": 6,
+        "importPath": "LittleLemon.LittleLemonAPI.serializers",
+        "description": "LittleLemon.LittleLemonAPI.serializers",
+        "peekOfCode": "class MenuItemSerializer(serializers.ModelSerializer):\n    category = serializers.PrimaryKeyRelatedField(queryset=Category.objects.all())\n    #category = CategorySerializer()\n    price_after_tax = serializers.SerializerMethodField(method_name = 'calculate_tax')\n    class Meta:\n        model = MenuItem\n        fields = ['id','title','price','featured','price_after_tax','category']\n    def calculate_tax(self, product:MenuItem):\n        return product.price * Decimal(1.1)\nclass OrderItemSerializer(serializers.ModelSerializer):",
+        "detail": "LittleLemon.LittleLemonAPI.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "OrderItemSerializer",
+        "kind": 6,
+        "importPath": "LittleLemon.LittleLemonAPI.serializers",
+        "description": "LittleLemon.LittleLemonAPI.serializers",
+        "peekOfCode": "class OrderItemSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = OrderItem\n        fields = [\"order\", \"menuitem\", \"quantity\", \"price\"]\nclass OrderSerializer(serializers.ModelSerializer):\n    orderitem = OrderItemSerializer(many=True, read_only=True, source=\"order\")\n    class Meta:\n        model = Order\n        fields = ['id','user','delivery_crew','status','total','date', 'orderitem','time']\nclass CartSerializer(serializers.ModelSerializer):",
+        "detail": "LittleLemon.LittleLemonAPI.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "OrderSerializer",
+        "kind": 6,
+        "importPath": "LittleLemon.LittleLemonAPI.serializers",
+        "description": "LittleLemon.LittleLemonAPI.serializers",
+        "peekOfCode": "class OrderSerializer(serializers.ModelSerializer):\n    orderitem = OrderItemSerializer(many=True, read_only=True, source=\"order\")\n    class Meta:\n        model = Order\n        fields = ['id','user','delivery_crew','status','total','date', 'orderitem','time']\nclass CartSerializer(serializers.ModelSerializer):\n    user = serializers.PrimaryKeyRelatedField(\n        queryset= User.objects.all(), default=serializers.CurrentUserDefault()\n    )\n    class Meta:",
+        "detail": "LittleLemon.LittleLemonAPI.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "CartSerializer",
+        "kind": 6,
+        "importPath": "LittleLemon.LittleLemonAPI.serializers",
+        "description": "LittleLemon.LittleLemonAPI.serializers",
+        "peekOfCode": "class CartSerializer(serializers.ModelSerializer):\n    user = serializers.PrimaryKeyRelatedField(\n        queryset= User.objects.all(), default=serializers.CurrentUserDefault()\n    )\n    class Meta:\n        model = Cart\n        fields = ['id','user','menu_item','unit_price','quantity','price']\n        extra_kwargs = {\"price\": {\"read_only\": True}}\n        depth = 1\n        def validate(self, attrs):",
+        "detail": "LittleLemon.LittleLemonAPI.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "UserSerializer",
+        "kind": 6,
+        "importPath": "LittleLemon.LittleLemonAPI.serializers",
+        "description": "LittleLemon.LittleLemonAPI.serializers",
+        "peekOfCode": "class UserSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = User\n        fields = ['id','username','email',]",
+        "detail": "LittleLemon.LittleLemonAPI.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "TenCallsPerMinute",
+        "kind": 6,
+        "importPath": "LittleLemon.LittleLemonAPI.throttles",
+        "description": "LittleLemon.LittleLemonAPI.throttles",
+        "peekOfCode": "class TenCallsPerMinute(UserRateThrottle):\n    scope = 'ten'  # for new throttle policy",
+        "detail": "LittleLemon.LittleLemonAPI.throttles",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "LittleLemon.LittleLemonAPI.urls",
+        "description": "LittleLemon.LittleLemonAPI.urls",
+        "peekOfCode": "urlpatterns = [\n    path('menu-items',views.MenuItemsView.as_view()),\n    path('menu-items/<int:pk>', views.SingleMenuItemView.as_view()),\n    path('category', views.CategoryView.as_view()),\n    path('orders',views.OrdersView.as_view()),\n    path('orders/<int:pk>',views.SingleOrderView.as_view()),\n    path('cart/menu-items',views.CartView.as_view()),\n    path('groups/manager/users',views.managers),\n    path('groups/delivery-crew/users',views.DeliveryCrewGroupView.as_view()),\n]",
+        "detail": "LittleLemon.LittleLemonAPI.urls",
+        "documentation": {}
+    },
+    {
+        "label": "CategoryView",
+        "kind": 6,
+        "importPath": "LittleLemon.LittleLemonAPI.views",
+        "description": "LittleLemon.LittleLemonAPI.views",
+        "peekOfCode": "class CategoryView(generics.ListCreateAPIView):\n    throttle_classes = [AnonRateThrottle, UserRateThrottle]\n    queryset = Category.objects.all()\n    serializer_class = CategorySerializer\n    pagination_class = CategoryPagination\n    def get_permissions(self):\n        permission_classes = []\n        if self.request.method != \"GET\":\n            permission_classes = [IsAuthenticated, IsAdminUser]\n        return [permission() for permission in permission_classes]",
+        "detail": "LittleLemon.LittleLemonAPI.views",
+        "documentation": {}
+    },
+    {
+        "label": "MenuItemsView",
+        "kind": 6,
+        "importPath": "LittleLemon.LittleLemonAPI.views",
+        "description": "LittleLemon.LittleLemonAPI.views",
+        "peekOfCode": "class MenuItemsView(generics.ListCreateAPIView):\n    throttle_classes = [AnonRateThrottle, UserRateThrottle]\n    queryset = MenuItem.objects.select_related('category').all()\n    serializer_class = MenuItemSerializer\n    search_fields = ['title','category__title']\n    ordering_fields = ['price','category']\n    filterset_fields = ['category']\n    pagination_class = MenuItemsPagination\n    def get_permissions(self):\n        permission_classes = []",
+        "detail": "LittleLemon.LittleLemonAPI.views",
+        "documentation": {}
+    },
+    {
+        "label": "SingleMenuItemView",
+        "kind": 6,
+        "importPath": "LittleLemon.LittleLemonAPI.views",
+        "description": "LittleLemon.LittleLemonAPI.views",
+        "peekOfCode": "class SingleMenuItemView(generics.RetrieveUpdateAPIView,generics.DestroyAPIView):\n    throttle_classes = [AnonRateThrottle, UserRateThrottle]\n    queryset = MenuItem.objects.all()\n    serializer_class = MenuItemSerializer\n    def get_permissions(self):\n        permission_classes = []\n        if self.request.method == \"GET\":\n            permission_classes = [IsAuthenticated]  \n        elif self.request.method == \"DELETE\":\n            permission_classes = [IsAuthenticated, IsAdminUser]",
+        "detail": "LittleLemon.LittleLemonAPI.views",
+        "documentation": {}
+    },
+    {
+        "label": "OrdersView",
+        "kind": 6,
+        "importPath": "LittleLemon.LittleLemonAPI.views",
+        "description": "LittleLemon.LittleLemonAPI.views",
+        "peekOfCode": "class OrdersView(generics.ListCreateAPIView):\n    throttle_classes = [AnonRateThrottle, UserRateThrottle]\n    serializer_class = OrderSerializer\n    def get_queryset(self):\n        if self.request.user.groups.filter(name=\"Manager\").exists():\n            queryset = Order.objects.all()\n        elif self.request.user.groups.filter(name='Delivery Crew').exists():\n            queryset = Order.objects.filter(delivery_crew=self.request.user)\n        else:\n            queryset = Order.objects.filter(user=self.request.user)",
+        "detail": "LittleLemon.LittleLemonAPI.views",
+        "documentation": {}
+    },
+    {
+        "label": "SingleOrderView",
+        "kind": 6,
+        "importPath": "LittleLemon.LittleLemonAPI.views",
+        "description": "LittleLemon.LittleLemonAPI.views",
+        "peekOfCode": "class SingleOrderView(generics.RetrieveUpdateAPIView, generics.DestroyAPIView):\n    throttle_classes = [AnonRateThrottle, UserRateThrottle] \n    serializer_class = OrderSerializer\n    def get_permissions(self):\n        permission_classes = []\n        if self.request.method == 'GET':\n            permission_classes = [IsAuthenticated]  \n        return [permission() for permission in permission_classes] \n    def get_queryset(self,*args,**kwargs):\n        queryset = Order.objects.filter(id=self.kwargs['pk'])",
+        "detail": "LittleLemon.LittleLemonAPI.views",
+        "documentation": {}
+    },
+    {
+        "label": "CartView",
+        "kind": 6,
+        "importPath": "LittleLemon.LittleLemonAPI.views",
+        "description": "LittleLemon.LittleLemonAPI.views",
+        "peekOfCode": "class CartView(generics.ListCreateAPIView):\n    throttle_classes = [AnonRateThrottle, UserRateThrottle]\n    permission_classes= [IsAuthenticated]\n    serializer_class = CartSerializer\n    def get_queryset(self):\n        queryset = Cart.objects.filter(user=self.request.user)\n        return queryset\n    def post(self, request, *args, **kwargs):\n        seriealized_item = CartSerializer(data=request.data, context={'request':request})\n        seriealized_item.is_valid(raise_exception=True)",
+        "detail": "LittleLemon.LittleLemonAPI.views",
+        "documentation": {}
+    },
+    {
+        "label": "DeliveryCrewGroupView",
+        "kind": 6,
+        "importPath": "LittleLemon.LittleLemonAPI.views",
+        "description": "LittleLemon.LittleLemonAPI.views",
+        "peekOfCode": "class DeliveryCrewGroupView(generics.ListCreateAPIView):\n    throttle_classes = [AnonRateThrottle,UserRateThrottle]\n    permission_classes = [IsAuthenticated,IsManager]\n    queryset = User.objects.filter(groups__name='Delivery Crew')\n    serializer_class = UserSerializer\n    def post(self, *args, **kwargs):\n        if self.request.POST.get('username'):\n            delivery_crew = Group.objects.get(name='Delivery Crew')\n            user = get_object_or_404(User, username= self.request.POST.get('username'))\n            delivery_crew.user_set.add(user)",
+        "detail": "LittleLemon.LittleLemonAPI.views",
+        "documentation": {}
+    },
+    {
+        "label": "managers",
+        "kind": 2,
+        "importPath": "LittleLemon.LittleLemonAPI.views",
+        "description": "LittleLemon.LittleLemonAPI.views",
+        "peekOfCode": "def managers(request):\n    if request.method == \"GET\":\n        users = User.objects.filter(groups__name='Manager')\n        user_serializer = UserSerializer(users,many=True)\n        return JsonResponse(status=200, data=user_serializer.data,safe=False)\n    else:\n        username = request.data['username']\n        if username:\n            user = get_object_or_404(User, username=username)\n            managers = Group.objects.get(name='Manager')",
+        "detail": "LittleLemon.LittleLemonAPI.views",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "LittleLemon.manage",
+        "description": "LittleLemon.manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'LittleLemon.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "LittleLemon.manage",
+        "documentation": {}
+    }
+]
