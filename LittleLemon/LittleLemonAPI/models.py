@@ -43,7 +43,7 @@ class Order(models.Model):
         return 'ODR#'+str(self.id)+"-D"+str(self.date).replace('-','')+"T"+str(self.time).replace(':','')
     
 class OrderItem(models.Model):
-    order = models.ForeignKey(User, on_delete=models.CASCADE)
+    order = models.ForeignKey(Order, on_delete=models.CASCADE)
     menu_item = models.ForeignKey(MenuItem, on_delete=models.CASCADE)
     quantity = models.SmallIntegerField()
     # unit_price = models.DecimalField(max_digits=6, decimal_places=2)
@@ -53,4 +53,4 @@ class OrderItem(models.Model):
         unique_together = ('order', 'menu_item')
     
     def __str__(self):
-        return self.order.username + " | " + self.menu_item.title
+        return self.order.user.username + " | " + self.menu_item.title
