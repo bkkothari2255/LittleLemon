@@ -1,1 +1,1229 @@
-{"_type":"export","__export_format":4,"__export_date":"2024-08-19T02:32:01.809Z","__export_source":"insomnia.desktop.app:v9.3.3","resources":[{"_id":"req_142be12b4bb44c6ca358ed998a92e2e4","parentId":"fld_ee4643b0a5dd403d827d85c7316c4b97","modified":1723944255443,"created":1723906838312,"url":"http://localhost:8000/auth/token/login/","name":"0 Login Admin","description":"","method":"POST","body":{"mimeType":"application/x-www-form-urlencoded","params":[{"id":"pair_3bb596dc06d14ec3ac68a2ed9f6c6aa2","name":"username","value":"bk","description":"","disabled":false},{"id":"pair_9a08fbc4d85b4ce2bdb14a725f770c20","name":"password","value":"admin","description":"","disabled":false}]},"parameters":[],"headers":[{"name":"Content-Type","value":"application/x-www-form-urlencoded"},{"name":"User-Agent","value":"insomnia/9.3.3"}],"authentication":{},"metaSortKey":-1723906786409.5,"isPrivate":false,"pathParameters":[],"afterResponseScript":"const jsonBody = insomnia.response.json();\n\ninsomnia.collectionVariables.set(\"admin-token\",jsonBody.auth_token);\ninsomnia.collectionVariables.set(\"djoser-prefix\", \"Token\");\n\n\n\n","settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"fld_ee4643b0a5dd403d827d85c7316c4b97","parentId":"wrk_scratchpad","modified":1723906767047,"created":1723906767047,"name":"Little Lemmon API","description":"","environment":{},"environmentPropertyOrder":null,"metaSortKey":-1723906767047,"_type":"request_group"},{"_id":"wrk_scratchpad","parentId":null,"modified":1709497281795,"created":1709497281795,"name":"Scratch Pad","description":"","scope":"collection","_type":"workspace"},{"_id":"req_45e1233fb73c4ad7baac6de340d4e09a","parentId":"fld_ee4643b0a5dd403d827d85c7316c4b97","modified":1723907631876,"created":1723906933637,"url":"http://localhost:8000/auth/token/login/","name":"5 Manager Login","description":"","method":"POST","body":{"mimeType":"application/x-www-form-urlencoded","params":[{"id":"pair_530eb0ee515d4081a92aeed0899282f2","name":"username","value":"Sanji","description":"","disabled":false},{"id":"pair_56640f51f9174580975dba505c90ef8b","name":"password","value":"SobaMask","description":"","disabled":false}]},"parameters":[],"headers":[{"name":"Content-Type","value":"application/x-www-form-urlencoded"},{"name":"User-Agent","value":"insomnia/9.3.3"}],"authentication":{"type":"none"},"metaSortKey":-1723906784404.875,"isPrivate":false,"pathParameters":[],"afterResponseScript":"const jsonBody = insomnia.response.json();\n\ninsomnia.collectionVariables.set(\"manager_token\",jsonBody.auth_token);\ninsomnia.collectionVariables.set(\"djoser-prefix\", \"Token\");\n\n\n\n","settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_3f6a2b68df524eb8a43a1dd059e6c1dd","parentId":"fld_ee4643b0a5dd403d827d85c7316c4b97","modified":1723944116445,"created":1723941337647,"url":"http://localhost:8000/auth/token/login/","name":"12 Customer Login","description":"","method":"POST","body":{"mimeType":"application/x-www-form-urlencoded","params":[{"id":"pair_530eb0ee515d4081a92aeed0899282f2","name":"username","value":"Brook","description":"","disabled":false},{"id":"pair_56640f51f9174580975dba505c90ef8b","name":"password","value":"SoulKing","description":"","disabled":false}]},"parameters":[],"headers":[{"name":"Content-Type","value":"application/x-www-form-urlencoded"},{"name":"User-Agent","value":"insomnia/9.3.3"}],"authentication":{"type":"none"},"metaSortKey":-1723906783402.5625,"isPrivate":false,"pathParameters":[],"afterResponseScript":"const jsonBody = insomnia.response.json();\n\ninsomnia.collectionVariables.set(\"customer_token\",jsonBody.auth_token);\ninsomnia.collectionVariables.set(\"djoser-prefix\", \"Token\");\n\n\n\n","settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_c7255954e1de44129409e0a8a76b9bc5","parentId":"fld_ee4643b0a5dd403d827d85c7316c4b97","modified":1723944075217,"created":1723906907843,"url":"http://localhost:8000/auth/token/login/","name":"Delivery Crew Login","description":"","method":"POST","body":{"mimeType":"application/x-www-form-urlencoded","params":[{"id":"pair_530eb0ee515d4081a92aeed0899282f2","name":"username","value":"Chopper","description":"","disabled":false},{"id":"pair_56640f51f9174580975dba505c90ef8b","name":"password","value":"CottonCandyLover","description":"","disabled":false}]},"parameters":[],"headers":[{"name":"Content-Type","value":"application/x-www-form-urlencoded"},{"name":"User-Agent","value":"insomnia/9.3.3"}],"authentication":{"type":"none"},"metaSortKey":-1723906782400.25,"isPrivate":false,"pathParameters":[],"afterResponseScript":"const jsonBody = insomnia.response.json();\n\ninsomnia.collectionVariables.set(\"delivery_crew_token\",jsonBody.auth_token);\ninsomnia.collectionVariables.set(\"djoser-prefix\", \"Token\");\n\n\n\n","settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_64da8975a6a84181aae0558af0f8609a","parentId":"fld_ee4643b0a5dd403d827d85c7316c4b97","modified":1724029994131,"created":1724029534290,"url":"http://localhost:8000/auth/token/login/","name":"Delivery Crew 2 Login","description":"","method":"POST","body":{"mimeType":"application/x-www-form-urlencoded","params":[{"id":"pair_530eb0ee515d4081a92aeed0899282f2","name":"username","value":"Luffy","description":"","disabled":false},{"id":"pair_56640f51f9174580975dba505c90ef8b","name":"password","value":"SunGodNika","description":"","disabled":false}]},"parameters":[],"headers":[{"name":"Content-Type","value":"application/x-www-form-urlencoded"},{"name":"User-Agent","value":"insomnia/9.3.3"}],"authentication":{"type":"none"},"metaSortKey":-1723906780395.625,"isPrivate":false,"pathParameters":[],"afterResponseScript":"const jsonBody = insomnia.response.json();\n\ninsomnia.collectionVariables.set(\"delivery_crew_2_token\",jsonBody.auth_token);\ninsomnia.collectionVariables.set(\"djoser-prefix\", \"Token\");\n\n\n\n","settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_dc9c8b81dc7147d3a2ff1327d44e6d83","parentId":"fld_4a33d38ffff0415bb3bfe14cea811685","modified":1724027978553,"created":1723906783287,"url":"localhost:8000/api/groups/manager/users","name":"1 Access Manager Group Admin","description":"","method":"GET","body":{},"parameters":[],"headers":[{"name":"User-Agent","value":"insomnia/9.3.3"}],"authentication":{"type":"bearer","token":"{{ _['admin-token'] }}","prefix":"{{ _['djoser-prefix'] }}"},"metaSortKey":-1723906982542,"isPrivate":false,"pathParameters":[],"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"fld_4a33d38ffff0415bb3bfe14cea811685","parentId":"fld_ee4643b0a5dd403d827d85c7316c4b97","modified":1723911929838,"created":1723906778391,"name":"Tasks","description":"","environment":{},"environmentPropertyOrder":null,"metaSortKey":-1723906778391,"_type":"request_group"},{"_id":"req_6e8e7a0ab3ae4d86981574bd8bcdbeb1","parentId":"fld_4a33d38ffff0415bb3bfe14cea811685","modified":1724029610773,"created":1723906982442,"url":"localhost:8000/api/groups/manager/users","name":"2 Assign/Remove User to Manager Group","description":"","method":"POST","body":{"mimeType":"application/x-www-form-urlencoded","params":[{"id":"pair_5e70c84274a443f995c425c9deb02c23","name":"username","value":"Nami","description":"","disabled":false}]},"parameters":[],"headers":[{"name":"Content-Type","value":"application/x-www-form-urlencoded"},{"name":"User-Agent","value":"insomnia/9.3.3"}],"authentication":{"type":"bearer","token":"{{ _['admin-token'] }}","prefix":"{{ _['djoser-prefix'] }}"},"metaSortKey":-1723906982442,"isPrivate":false,"pathParameters":[],"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_6de453aab2424c35b64da6d90ef5154a","parentId":"fld_4a33d38ffff0415bb3bfe14cea811685","modified":1723907455158,"created":1723907424321,"url":"http://localhost:8000/api/menu-items","name":"3 Admin Menu Items Create","description":"","method":"POST","body":{"mimeType":"application/x-www-form-urlencoded","params":[{"id":"pair_fe88660376aa4562a21ec31f5457bf6c","name":"title","value":" Fruit Salad","description":"","disabled":false},{"id":"pair_e3807e439b0c4224becaa582d679c6d8","name":"price","value":"5","description":"","disabled":false},{"id":"pair_2c607b86d5e84bf99b0a5d5fc215af78","name":"featured","value":"false","description":"","disabled":false},{"id":"pair_9f1e75f7f37245928ebaebdece9e8e20","name":"category","value":"4","description":"","disabled":false}]},"parameters":[],"headers":[{"name":"Content-Type","value":"application/x-www-form-urlencoded"},{"name":"User-Agent","value":"insomnia/9.3.3"}],"authentication":{"type":"bearer","prefix":"{{ _['djoser-prefix'] }}","token":"{{customer_token}}"},"preRequestScript":"","metaSortKey":-1723906882864.5,"isPrivate":false,"pathParameters":[],"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_1411547e7c4b4317900bcbd96cb8939f","parentId":"fld_4a33d38ffff0415bb3bfe14cea811685","modified":1723907562807,"created":1723907545856,"url":"http://localhost:8000/api/menu-items","name":"4 Admin Add Categories","description":"","method":"POST","body":{"mimeType":"application/x-www-form-urlencoded","params":[{"id":"pair_fe88660376aa4562a21ec31f5457bf6c","name":"title","value":" Fruit Salad","description":"","disabled":false},{"id":"pair_e3807e439b0c4224becaa582d679c6d8","name":"price","value":"5","description":"","disabled":false},{"id":"pair_2c607b86d5e84bf99b0a5d5fc215af78","name":"featured","value":"false","description":"","disabled":false},{"id":"pair_9f1e75f7f37245928ebaebdece9e8e20","name":"category","value":"4","description":"","disabled":false}]},"parameters":[],"headers":[{"name":"Content-Type","value":"application/x-www-form-urlencoded"},{"name":"User-Agent","value":"insomnia/9.3.3"}],"authentication":{"type":"bearer","prefix":"{{ _['djoser-prefix'] }}","token":"{{customer_token}}"},"preRequestScript":"","metaSortKey":-1723906834637,"isPrivate":false,"pathParameters":[],"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_a29f357521b446da91ea5238ee2f40e2","parentId":"fld_4a33d38ffff0415bb3bfe14cea811685","modified":1723911454981,"created":1723908943731,"url":"http://localhost:8000/api/menu-items/5","name":"6 Manager Set Menu Item Featured","description":"","method":"PATCH","body":{"mimeType":"application/x-www-form-urlencoded","params":[]},"parameters":[],"headers":[{"name":"Content-Type","value":"application/x-www-form-urlencoded"},{"name":"User-Agent","value":"insomnia/9.3.3"}],"authentication":{"type":"bearer","token":"{{ _.manager_token }}","prefix":"{{ _['djoser-prefix'] }}"},"metaSortKey":-1723906834624.5,"isPrivate":false,"pathParameters":[],"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_f5c1f2f2155b49fca839dfe115697e0f","parentId":"fld_4a33d38ffff0415bb3bfe14cea811685","modified":1724034051350,"created":1723911865137,"url":"localhost:8000/api/groups/delivery-crew/users","name":"7 Manager Can Assign/Remove User to Delivery Crew","description":"","method":"GET","body":{"mimeType":"application/x-www-form-urlencoded","params":[{"id":"pair_da597dcf613d468489e94ae107666397","name":"username","value":"Brook","description":"","disabled":false}]},"parameters":[],"headers":[{"name":"Content-Type","value":"application/x-www-form-urlencoded"},{"name":"User-Agent","value":"insomnia/9.3.3"}],"authentication":{"type":"bearer","token":"{{ _.manager_token }}","prefix":"{{ _['djoser-prefix'] }}"},"metaSortKey":-1723906834618.25,"isPrivate":false,"pathParameters":[],"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_a0df7ffe5dc649419c8cd384e3f704e0","parentId":"fld_4a33d38ffff0415bb3bfe14cea811685","modified":1724028029090,"created":1724021869893,"url":"localhost:8000/api/orders","name":" 8.1 Manager Access Orders","description":"","method":"GET","body":{},"parameters":[],"headers":[{"name":"User-Agent","value":"insomnia/9.3.3"}],"authentication":{"type":"bearer","token":"{{ _.manager_token }}","prefix":"{{ _['djoser-prefix'] }}"},"metaSortKey":-1723906834616.6875,"isPrivate":false,"pathParameters":[],"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_f61272d313894c2ab750cb6cf883cd99","parentId":"fld_4a33d38ffff0415bb3bfe14cea811685","modified":1724032294575,"created":1723911880252,"url":"localhost:8000/api/orders/32","name":"8 Manager Assign Order to Delivery","description":"","method":"PATCH","body":{"mimeType":"application/x-www-form-urlencoded","params":[{"id":"pair_8e3e4d90187f4d338946fd59a3b32f38","name":"delivery_crew","value":"6","description":"","disabled":false},{"id":"pair_e357c70b4239415ebd5e7622949a551f","name":"delivery_crew","value":"5","description":"","disabled":true}]},"parameters":[],"headers":[{"name":"Content-Type","value":"application/x-www-form-urlencoded"},{"name":"User-Agent","value":"insomnia/9.3.3"}],"authentication":{"type":"bearer","token":"{{ _.manager_token }}","prefix":"{{ _['djoser-prefix'] }}"},"metaSortKey":-1723906834615.125,"isPrivate":false,"pathParameters":[],"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_c0e2f5a4d0494e95ab5727e16a2eecf7","parentId":"fld_4a33d38ffff0415bb3bfe14cea811685","modified":1724032316680,"created":1723911893675,"url":"localhost:8000/api/orders","name":"9 Delivery Crew Access Orders","description":"","method":"GET","body":{},"parameters":[],"headers":[{"name":"User-Agent","value":"insomnia/9.3.3"}],"authentication":{"type":"bearer","token":"{{ _.delivery_crew_2_token }}","prefix":"{{ _['djoser-prefix'] }}","disabled":false},"metaSortKey":-1723906834613.5625,"isPrivate":false,"pathParameters":[],"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_fd8a40a6804e4b89a66c98537c7f5851","parentId":"fld_4a33d38ffff0415bb3bfe14cea811685","modified":1724032112507,"created":1723911906104,"url":"localhost:8000/api/orders/32","name":"10 Delivery Crew Update Delivery Status","description":"","method":"PATCH","body":{"mimeType":"application/x-www-form-urlencoded","params":[{"id":"pair_41a45e8ab92745368f261855bd5af3dd","name":"status","value":"true","description":"","disabled":false},{"id":"pair_4d47850e68fb4f97b7d97236943cc028","name":"status","value":"false","description":"","disabled":true}]},"parameters":[],"headers":[{"name":"Content-Type","value":"application/x-www-form-urlencoded"},{"name":"User-Agent","value":"insomnia/9.3.3"}],"authentication":{"type":"bearer","token":"{{ _.delivery_crew_2_token }}","prefix":"{{ _['djoser-prefix'] }}"},"metaSortKey":-1723906834612.7812,"isPrivate":false,"pathParameters":[],"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_2867a88dfa5c45fe8b989d1c245314ff","parentId":"fld_4a33d38ffff0415bb3bfe14cea811685","modified":1723907824777,"created":1723907732032,"url":"http://localhost:8000/auth/users/","name":"11 Customer Register","description":"","method":"POST","body":{"mimeType":"application/x-www-form-urlencoded","params":[{"id":"pair_72f76aaabdc8439ebb8ba9318140a59c","name":"username","value":"Brook","description":"","disabled":false},{"id":"pair_694536dfa2384c1eaf325ecff7073006","name":"email","value":"brook@onepiece.com","description":"","disabled":false},{"id":"pair_482af9dbeae2400aa7771dd1c782442a","name":"password","value":"SoulKing","description":"","disabled":false}]},"parameters":[],"headers":[{"name":"Content-Type","value":"application/x-www-form-urlencoded"},{"name":"User-Agent","value":"insomnia/9.3.3"}],"authentication":{},"metaSortKey":-1723906834612,"isPrivate":false,"pathParameters":[],"afterResponseScript":"","settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_8a600133fb64446f8f53ee51f9b3e079","parentId":"fld_4a33d38ffff0415bb3bfe14cea811685","modified":1723908379775,"created":1723908310856,"url":"http://localhost:8000/api/category","name":"13 Customer Categories","description":"","method":"GET","body":{},"parameters":[],"headers":[{"name":"User-Agent","value":"insomnia/9.3.3"}],"authentication":{"type":"bearer","prefix":"{{ _['djoser-prefix'] }}","token":"{{customer_token}}"},"preRequestScript":"","metaSortKey":-1723906834599.5,"isPrivate":false,"pathParameters":[],"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_f0858df046ca40fd8be761022aaf5f98","parentId":"fld_4a33d38ffff0415bb3bfe14cea811685","modified":1723907834606,"created":1723907809734,"url":"http://localhost:8000/api/menu-items","name":"14 Customer Menu Items","description":"","method":"GET","body":{},"parameters":[],"headers":[{"name":"User-Agent","value":"insomnia/9.3.3"}],"authentication":{"type":"bearer","prefix":"{{ _['djoser-prefix'] }}","token":"{{customer_token}}"},"preRequestScript":"","metaSortKey":-1723906834587,"isPrivate":false,"pathParameters":[],"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_40c8f844cf6a40c79ea794654978639d","parentId":"fld_4a33d38ffff0415bb3bfe14cea811685","modified":1723908674706,"created":1723908513230,"url":"http://localhost:8000/api/menu-items?category=3","name":"15 Customer Menu Items by Category","description":"","method":"GET","body":{},"parameters":[],"headers":[{"name":"User-Agent","value":"insomnia/9.3.3"}],"authentication":{"type":"bearer","prefix":"{{ _['djoser-prefix'] }}","token":"{{customer_token}}"},"preRequestScript":"","metaSortKey":-1723906828564.8125,"isPrivate":false,"pathParameters":[],"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_37f7c44e5db74f91bc96e2d96d138b2e","parentId":"fld_4a33d38ffff0415bb3bfe14cea811685","modified":1723908644729,"created":1723908601714,"url":"localhost:8000/api/menu-items?page=2&perpage=4","name":"16 Customer Menu Items Paginate","description":"","method":"GET","body":{},"parameters":[],"headers":[{"name":"User-Agent","value":"insomnia/9.3.3"}],"authentication":{"type":"bearer","prefix":"{{ _['djoser-prefix'] }}","token":"{{customer_token}}"},"preRequestScript":"","metaSortKey":-1723906822542.625,"isPrivate":false,"pathParameters":[],"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_51536f69042b4c499f45d07ee4d334d7","parentId":"fld_4a33d38ffff0415bb3bfe14cea811685","modified":1723908828694,"created":1723908748058,"url":"http://localhost:8000/api/menu-items?category=3&ordering=price","name":"17 Customer Menu Items Sort by Price","description":"","method":"GET","body":{},"parameters":[],"headers":[{"name":"User-Agent","value":"insomnia/9.3.3"}],"authentication":{},"metaSortKey":-1723906822442.625,"isPrivate":false,"pathParameters":[],"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_a7d7475064954ecd833756defcf4ff84","parentId":"fld_4a33d38ffff0415bb3bfe14cea811685","modified":1724027346221,"created":1723908973378,"url":"http://localhost:8000/api/cart/menu-items","name":"18 Customer Cart Menu Item  Add/Remove","description":"","method":"POST","body":{"mimeType":"application/x-www-form-urlencoded","params":[{"id":"pair_223293c13b5f43b6aa5b41bd930688a4","name":"menu_item","value":"7","description":"","disabled":false},{"id":"pair_5b76169e47c7415981a6bf6c91da1ab1","name":"quantity","value":"7","description":"","disabled":false}]},"parameters":[],"headers":[{"name":"Content-Type","value":"application/x-www-form-urlencoded"},{"name":"User-Agent","value":"insomnia/9.3.3"}],"authentication":{"type":"bearer","token":"{{ _.customer_token }}","prefix":"{{ _['djoser-prefix'] }}"},"metaSortKey":-1723906822342.625,"isPrivate":false,"pathParameters":[],"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_630a0500418b4feaa85202645258fc4c","parentId":"fld_4a33d38ffff0415bb3bfe14cea811685","modified":1723936063461,"created":1723910894966,"url":"http://localhost:8000/api/cart/menu-items","name":"19 Customer Cart Previous Items","description":"","method":"GET","body":{"mimeType":"application/x-www-form-urlencoded","params":[]},"parameters":[],"headers":[{"name":"Content-Type","value":"application/x-www-form-urlencoded"},{"name":"User-Agent","value":"insomnia/9.3.3"}],"authentication":{"type":"bearer","token":"{{ _.customer_token }}","prefix":"{{ _['djoser-prefix'] }}"},"metaSortKey":-1723906804376.0625,"isPrivate":false,"pathParameters":[],"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_5ce25b07588b4faf9da844f3acc8bf39","parentId":"fld_4a33d38ffff0415bb3bfe14cea811685","modified":1724024082613,"created":1723910992318,"url":"localhost:8000/api/orders","name":"20 Customer Place Order","description":"","method":"POST","body":{"mimeType":"application/x-www-form-urlencoded","params":[]},"parameters":[],"headers":[{"name":"Content-Type","value":"application/x-www-form-urlencoded"},{"name":"User-Agent","value":"insomnia/9.3.3"}],"authentication":{"type":"bearer","token":"{{ _.customer_token }}","prefix":"{{ _['djoser-prefix'] }}"},"metaSortKey":-1723906804276.0625,"isPrivate":false,"pathParameters":[],"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_0a2ba55be30747deacd00b7385a38068","parentId":"fld_4a33d38ffff0415bb3bfe14cea811685","modified":1724024539988,"created":1723911035140,"url":"localhost:8000/api/orders","name":"21 Customer Browse Own Orders","description":"","method":"GET","body":{},"parameters":[],"headers":[{"name":"User-Agent","value":"insomnia/9.3.3"}],"authentication":{"type":"bearer","token":"{{ _.customer_token }}","prefix":"{{ _['djoser-prefix'] }}"},"metaSortKey":-1723906804176.0625,"isPrivate":false,"pathParameters":[],"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"env_99d30891da4bdcebc63947a8fc17f076de878684","parentId":"wrk_scratchpad","modified":1724034591405,"created":1723776507535,"name":"Base Environment","data":{"customer_token":"b67321ceb19b67f69ad5f3d41e771f7c1b438d53","djoser-prefix":"Token","customer-refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcyMzk1MTIxNSwiaWF0IjoxNzIzODY0ODE1LCJqdGkiOiJlYWQ5MTY0NDIxZDM0YjFjYjgxNGYyZWM0NDg1NGNhMCIsInVzZXJfaWQiOjd9.XJQh_up0V86ZZnAs9gIakXRUAfX82ytd0gLmPFKKoaE","admin-token":"4063dc334efd0fce60124ed83937e67631d67f22","manager_token":"350fb1269f728b7b54ddc27a0d83938021965dc4","delivery_crew_token":"8165155e19c8e9daf28b3430b71cd4043c5e4d6e","delivery_crew_2_token":"4fbdd4a785a2a812640aa6edf064f86fc9904662"},"dataPropertyOrder":{"&":["customer_token","djoser-prefix","customer-refresh_token","admin-token","manager_token","delivery_crew_token","delivery_crew_2_token"]},"color":null,"isPrivate":false,"metaSortKey":1723776507535,"_type":"environment"},{"_id":"jar_99d30891da4bdcebc63947a8fc17f076de878684","parentId":"wrk_scratchpad","modified":1724034591395,"created":1723776507583,"name":"Default Jar","cookies":[{"id":"5607ddee-6164-42f1-982f-a67f35ad6b14","key":"csrftoken","value":"6qXl2mRYyOwW29FGmFmclcQi7HGPzSV7","expires":"2025-08-16T18:53:04.000Z","domain":"localhost","path":"/","secure":false,"httpOnly":false,"extensions":[],"creation":"2024-08-17T18:52:52.750Z","hostOnly":true,"lastAccessed":"2024-08-17T18:53:04.891Z"}],"_type":"cookie_jar"}]}
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2024-08-19T02:32:01.809Z",
+    "__export_source": "insomnia.desktop.app:v9.3.3",
+    "resources": [
+        {
+            "_id": "req_142be12b4bb44c6ca358ed998a92e2e4",
+            "parentId": "fld_ee4643b0a5dd403d827d85c7316c4b97",
+            "modified": 1723944255443,
+            "created": 1723906838312,
+            "url": "http://localhost:8000/auth/token/login/",
+            "name": "0 Login Admin",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": [
+                    {
+                        "id": "pair_3bb596dc06d14ec3ac68a2ed9f6c6aa2",
+                        "name": "username",
+                        "value": "bk",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "id": "pair_9a08fbc4d85b4ce2bdb14a725f770c20",
+                        "name": "password",
+                        "value": "admin",
+                        "description": "",
+                        "disabled": false
+                    }
+                ]
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.3"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1723906786409.5,
+            "isPrivate": false,
+            "pathParameters": [],
+            "afterResponseScript": "const jsonBody = insomnia.response.json();\n\ninsomnia.collectionVariables.set(\"admin-token\",jsonBody.auth_token);\ninsomnia.collectionVariables.set(\"djoser-prefix\", \"Token\");\n\n\n\n",
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_ee4643b0a5dd403d827d85c7316c4b97",
+            "parentId": "wrk_scratchpad",
+            "modified": 1723906767047,
+            "created": 1723906767047,
+            "name": "Little Lemmon API",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1723906767047,
+            "_type": "request_group"
+        },
+        {
+            "_id": "wrk_scratchpad",
+            "parentId": null,
+            "modified": 1709497281795,
+            "created": 1709497281795,
+            "name": "Scratch Pad",
+            "description": "",
+            "scope": "collection",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_45e1233fb73c4ad7baac6de340d4e09a",
+            "parentId": "fld_ee4643b0a5dd403d827d85c7316c4b97",
+            "modified": 1723907631876,
+            "created": 1723906933637,
+            "url": "http://localhost:8000/auth/token/login/",
+            "name": "5 Manager Login",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": [
+                    {
+                        "id": "pair_530eb0ee515d4081a92aeed0899282f2",
+                        "name": "username",
+                        "value": "Sanji",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "id": "pair_56640f51f9174580975dba505c90ef8b",
+                        "name": "password",
+                        "value": "SobaMask",
+                        "description": "",
+                        "disabled": false
+                    }
+                ]
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.3"
+                }
+            ],
+            "authentication": {
+                "type": "none"
+            },
+            "metaSortKey": -1723906784404.875,
+            "isPrivate": false,
+            "pathParameters": [],
+            "afterResponseScript": "const jsonBody = insomnia.response.json();\n\ninsomnia.collectionVariables.set(\"manager_token\",jsonBody.auth_token);\ninsomnia.collectionVariables.set(\"djoser-prefix\", \"Token\");\n\n\n\n",
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_3f6a2b68df524eb8a43a1dd059e6c1dd",
+            "parentId": "fld_ee4643b0a5dd403d827d85c7316c4b97",
+            "modified": 1723944116445,
+            "created": 1723941337647,
+            "url": "http://localhost:8000/auth/token/login/",
+            "name": "12 Customer Login",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": [
+                    {
+                        "id": "pair_530eb0ee515d4081a92aeed0899282f2",
+                        "name": "username",
+                        "value": "Brook",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "id": "pair_56640f51f9174580975dba505c90ef8b",
+                        "name": "password",
+                        "value": "SoulKing",
+                        "description": "",
+                        "disabled": false
+                    }
+                ]
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.3"
+                }
+            ],
+            "authentication": {
+                "type": "none"
+            },
+            "metaSortKey": -1723906783402.5625,
+            "isPrivate": false,
+            "pathParameters": [],
+            "afterResponseScript": "const jsonBody = insomnia.response.json();\n\ninsomnia.collectionVariables.set(\"customer_token\",jsonBody.auth_token);\ninsomnia.collectionVariables.set(\"djoser-prefix\", \"Token\");\n\n\n\n",
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_c7255954e1de44129409e0a8a76b9bc5",
+            "parentId": "fld_ee4643b0a5dd403d827d85c7316c4b97",
+            "modified": 1723944075217,
+            "created": 1723906907843,
+            "url": "http://localhost:8000/auth/token/login/",
+            "name": "Delivery Crew Login",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": [
+                    {
+                        "id": "pair_530eb0ee515d4081a92aeed0899282f2",
+                        "name": "username",
+                        "value": "Chopper",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "id": "pair_56640f51f9174580975dba505c90ef8b",
+                        "name": "password",
+                        "value": "CottonCandyLover",
+                        "description": "",
+                        "disabled": false
+                    }
+                ]
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.3"
+                }
+            ],
+            "authentication": {
+                "type": "none"
+            },
+            "metaSortKey": -1723906782400.25,
+            "isPrivate": false,
+            "pathParameters": [],
+            "afterResponseScript": "const jsonBody = insomnia.response.json();\n\ninsomnia.collectionVariables.set(\"delivery_crew_token\",jsonBody.auth_token);\ninsomnia.collectionVariables.set(\"djoser-prefix\", \"Token\");\n\n\n\n",
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_64da8975a6a84181aae0558af0f8609a",
+            "parentId": "fld_ee4643b0a5dd403d827d85c7316c4b97",
+            "modified": 1724029994131,
+            "created": 1724029534290,
+            "url": "http://localhost:8000/auth/token/login/",
+            "name": "Delivery Crew 2 Login",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": [
+                    {
+                        "id": "pair_530eb0ee515d4081a92aeed0899282f2",
+                        "name": "username",
+                        "value": "Luffy",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "id": "pair_56640f51f9174580975dba505c90ef8b",
+                        "name": "password",
+                        "value": "SunGodNika",
+                        "description": "",
+                        "disabled": false
+                    }
+                ]
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.3"
+                }
+            ],
+            "authentication": {
+                "type": "none"
+            },
+            "metaSortKey": -1723906780395.625,
+            "isPrivate": false,
+            "pathParameters": [],
+            "afterResponseScript": "const jsonBody = insomnia.response.json();\n\ninsomnia.collectionVariables.set(\"delivery_crew_2_token\",jsonBody.auth_token);\ninsomnia.collectionVariables.set(\"djoser-prefix\", \"Token\");\n\n\n\n",
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_dc9c8b81dc7147d3a2ff1327d44e6d83",
+            "parentId": "fld_4a33d38ffff0415bb3bfe14cea811685",
+            "modified": 1724027978553,
+            "created": 1723906783287,
+            "url": "localhost:8000/api/groups/manager/users",
+            "name": "1 Access Manager Group Admin",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.3"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{ _['admin-token'] }}",
+                "prefix": "{{ _['djoser-prefix'] }}"
+            },
+            "metaSortKey": -1723906982542,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_4a33d38ffff0415bb3bfe14cea811685",
+            "parentId": "fld_ee4643b0a5dd403d827d85c7316c4b97",
+            "modified": 1723911929838,
+            "created": 1723906778391,
+            "name": "Tasks",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1723906778391,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_6e8e7a0ab3ae4d86981574bd8bcdbeb1",
+            "parentId": "fld_4a33d38ffff0415bb3bfe14cea811685",
+            "modified": 1724029610773,
+            "created": 1723906982442,
+            "url": "localhost:8000/api/groups/manager/users",
+            "name": "2 Assign/Remove User to Manager Group",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": [
+                    {
+                        "id": "pair_5e70c84274a443f995c425c9deb02c23",
+                        "name": "username",
+                        "value": "Nami",
+                        "description": "",
+                        "disabled": false
+                    }
+                ]
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.3"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{ _['admin-token'] }}",
+                "prefix": "{{ _['djoser-prefix'] }}"
+            },
+            "metaSortKey": -1723906982442,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_6de453aab2424c35b64da6d90ef5154a",
+            "parentId": "fld_4a33d38ffff0415bb3bfe14cea811685",
+            "modified": 1723907455158,
+            "created": 1723907424321,
+            "url": "http://localhost:8000/api/menu-items",
+            "name": "3 Admin Menu Items Create",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": [
+                    {
+                        "id": "pair_fe88660376aa4562a21ec31f5457bf6c",
+                        "name": "title",
+                        "value": " Fruit Salad",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "id": "pair_e3807e439b0c4224becaa582d679c6d8",
+                        "name": "price",
+                        "value": "5",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "id": "pair_2c607b86d5e84bf99b0a5d5fc215af78",
+                        "name": "featured",
+                        "value": "false",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "id": "pair_9f1e75f7f37245928ebaebdece9e8e20",
+                        "name": "category",
+                        "value": "4",
+                        "description": "",
+                        "disabled": false
+                    }
+                ]
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.3"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "prefix": "{{ _['djoser-prefix'] }}",
+                "token": "{{customer_token}}"
+            },
+            "preRequestScript": "",
+            "metaSortKey": -1723906882864.5,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_1411547e7c4b4317900bcbd96cb8939f",
+            "parentId": "fld_4a33d38ffff0415bb3bfe14cea811685",
+            "modified": 1723907562807,
+            "created": 1723907545856,
+            "url": "http://localhost:8000/api/menu-items",
+            "name": "4 Admin Add Categories",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": [
+                    {
+                        "id": "pair_fe88660376aa4562a21ec31f5457bf6c",
+                        "name": "title",
+                        "value": "Beverages",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "id": "pair_9f1e75f7f37245928ebaebdece9e8e20",
+                        "name": "slug",
+                        "value": "beverages",
+                        "description": "",
+                        "disabled": false
+                    }
+                ]
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.3"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "prefix": "{{ _['djoser-prefix'] }}",
+                "token": "{{customer_token}}"
+            },
+            "preRequestScript": "",
+            "metaSortKey": -1723906834637,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_a29f357521b446da91ea5238ee2f40e2",
+            "parentId": "fld_4a33d38ffff0415bb3bfe14cea811685",
+            "modified": 1723911454981,
+            "created": 1723908943731,
+            "url": "http://localhost:8000/api/menu-items/5",
+            "name": "6 Manager Set Menu Item Featured",
+            "description": "",
+            "method": "PATCH",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": []
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.3"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{ _.manager_token }}",
+                "prefix": "{{ _['djoser-prefix'] }}"
+            },
+            "metaSortKey": -1723906834624.5,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_f5c1f2f2155b49fca839dfe115697e0f",
+            "parentId": "fld_4a33d38ffff0415bb3bfe14cea811685",
+            "modified": 1724034051350,
+            "created": 1723911865137,
+            "url": "localhost:8000/api/groups/delivery-crew/users",
+            "name": "7 Manager Can Assign/Remove User to Delivery Crew",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": [
+                    {
+                        "id": "pair_da597dcf613d468489e94ae107666397",
+                        "name": "username",
+                        "value": "Brook",
+                        "description": "",
+                        "disabled": false
+                    }
+                ]
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.3"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{ _.manager_token }}",
+                "prefix": "{{ _['djoser-prefix'] }}"
+            },
+            "metaSortKey": -1723906834618.25,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_a0df7ffe5dc649419c8cd384e3f704e0",
+            "parentId": "fld_4a33d38ffff0415bb3bfe14cea811685",
+            "modified": 1724028029090,
+            "created": 1724021869893,
+            "url": "localhost:8000/api/orders",
+            "name": " 8.1 Manager Access Orders",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.3"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{ _.manager_token }}",
+                "prefix": "{{ _['djoser-prefix'] }}"
+            },
+            "metaSortKey": -1723906834616.6875,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_f61272d313894c2ab750cb6cf883cd99",
+            "parentId": "fld_4a33d38ffff0415bb3bfe14cea811685",
+            "modified": 1724032294575,
+            "created": 1723911880252,
+            "url": "localhost:8000/api/orders/32",
+            "name": "8 Manager Assign Order to Delivery",
+            "description": "",
+            "method": "PATCH",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": [
+                    {
+                        "id": "pair_8e3e4d90187f4d338946fd59a3b32f38",
+                        "name": "delivery_crew",
+                        "value": "6",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "id": "pair_e357c70b4239415ebd5e7622949a551f",
+                        "name": "delivery_crew",
+                        "value": "5",
+                        "description": "",
+                        "disabled": true
+                    }
+                ]
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.3"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{ _.manager_token }}",
+                "prefix": "{{ _['djoser-prefix'] }}"
+            },
+            "metaSortKey": -1723906834615.125,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_c0e2f5a4d0494e95ab5727e16a2eecf7",
+            "parentId": "fld_4a33d38ffff0415bb3bfe14cea811685",
+            "modified": 1724032316680,
+            "created": 1723911893675,
+            "url": "localhost:8000/api/orders",
+            "name": "9 Delivery Crew Access Orders",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.3"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{ _.delivery_crew_2_token }}",
+                "prefix": "{{ _['djoser-prefix'] }}",
+                "disabled": false
+            },
+            "metaSortKey": -1723906834613.5625,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_fd8a40a6804e4b89a66c98537c7f5851",
+            "parentId": "fld_4a33d38ffff0415bb3bfe14cea811685",
+            "modified": 1724032112507,
+            "created": 1723911906104,
+            "url": "localhost:8000/api/orders/32",
+            "name": "10 Delivery Crew Update Delivery Status",
+            "description": "",
+            "method": "PATCH",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": [
+                    {
+                        "id": "pair_41a45e8ab92745368f261855bd5af3dd",
+                        "name": "status",
+                        "value": "true",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "id": "pair_4d47850e68fb4f97b7d97236943cc028",
+                        "name": "status",
+                        "value": "false",
+                        "description": "",
+                        "disabled": true
+                    }
+                ]
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.3"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{ _.delivery_crew_2_token }}",
+                "prefix": "{{ _['djoser-prefix'] }}"
+            },
+            "metaSortKey": -1723906834612.7812,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_2867a88dfa5c45fe8b989d1c245314ff",
+            "parentId": "fld_4a33d38ffff0415bb3bfe14cea811685",
+            "modified": 1723907824777,
+            "created": 1723907732032,
+            "url": "http://localhost:8000/auth/users/",
+            "name": "11 Customer Register",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": [
+                    {
+                        "id": "pair_72f76aaabdc8439ebb8ba9318140a59c",
+                        "name": "username",
+                        "value": "Brook",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "id": "pair_694536dfa2384c1eaf325ecff7073006",
+                        "name": "email",
+                        "value": "brook@onepiece.com",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "id": "pair_482af9dbeae2400aa7771dd1c782442a",
+                        "name": "password",
+                        "value": "SoulKing",
+                        "description": "",
+                        "disabled": false
+                    }
+                ]
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.3"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1723906834612,
+            "isPrivate": false,
+            "pathParameters": [],
+            "afterResponseScript": "",
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_8a600133fb64446f8f53ee51f9b3e079",
+            "parentId": "fld_4a33d38ffff0415bb3bfe14cea811685",
+            "modified": 1723908379775,
+            "created": 1723908310856,
+            "url": "http://localhost:8000/api/category",
+            "name": "13 Customer Categories",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.3"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "prefix": "{{ _['djoser-prefix'] }}",
+                "token": "{{customer_token}}"
+            },
+            "preRequestScript": "",
+            "metaSortKey": -1723906834599.5,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_f0858df046ca40fd8be761022aaf5f98",
+            "parentId": "fld_4a33d38ffff0415bb3bfe14cea811685",
+            "modified": 1723907834606,
+            "created": 1723907809734,
+            "url": "http://localhost:8000/api/menu-items",
+            "name": "14 Customer Menu Items",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.3"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "prefix": "{{ _['djoser-prefix'] }}",
+                "token": "{{customer_token}}"
+            },
+            "preRequestScript": "",
+            "metaSortKey": -1723906834587,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_40c8f844cf6a40c79ea794654978639d",
+            "parentId": "fld_4a33d38ffff0415bb3bfe14cea811685",
+            "modified": 1723908674706,
+            "created": 1723908513230,
+            "url": "http://localhost:8000/api/menu-items?category=3",
+            "name": "15 Customer Menu Items by Category",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.3"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "prefix": "{{ _['djoser-prefix'] }}",
+                "token": "{{customer_token}}"
+            },
+            "preRequestScript": "",
+            "metaSortKey": -1723906828564.8125,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_37f7c44e5db74f91bc96e2d96d138b2e",
+            "parentId": "fld_4a33d38ffff0415bb3bfe14cea811685",
+            "modified": 1723908644729,
+            "created": 1723908601714,
+            "url": "localhost:8000/api/menu-items?page=2&perpage=4",
+            "name": "16 Customer Menu Items Paginate",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.3"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "prefix": "{{ _['djoser-prefix'] }}",
+                "token": "{{customer_token}}"
+            },
+            "preRequestScript": "",
+            "metaSortKey": -1723906822542.625,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_51536f69042b4c499f45d07ee4d334d7",
+            "parentId": "fld_4a33d38ffff0415bb3bfe14cea811685",
+            "modified": 1723908828694,
+            "created": 1723908748058,
+            "url": "http://localhost:8000/api/menu-items?category=3&ordering=price",
+            "name": "17 Customer Menu Items Sort by Price",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.3"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1723906822442.625,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_a7d7475064954ecd833756defcf4ff84",
+            "parentId": "fld_4a33d38ffff0415bb3bfe14cea811685",
+            "modified": 1724027346221,
+            "created": 1723908973378,
+            "url": "http://localhost:8000/api/cart/menu-items",
+            "name": "18 Customer Cart Menu Item  Add/Remove",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": [
+                    {
+                        "id": "pair_223293c13b5f43b6aa5b41bd930688a4",
+                        "name": "menu_item",
+                        "value": "7",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "id": "pair_5b76169e47c7415981a6bf6c91da1ab1",
+                        "name": "quantity",
+                        "value": "7",
+                        "description": "",
+                        "disabled": false
+                    }
+                ]
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.3"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{ _.customer_token }}",
+                "prefix": "{{ _['djoser-prefix'] }}"
+            },
+            "metaSortKey": -1723906822342.625,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_630a0500418b4feaa85202645258fc4c",
+            "parentId": "fld_4a33d38ffff0415bb3bfe14cea811685",
+            "modified": 1723936063461,
+            "created": 1723910894966,
+            "url": "http://localhost:8000/api/cart/menu-items",
+            "name": "19 Customer Cart Previous Items",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": []
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.3"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{ _.customer_token }}",
+                "prefix": "{{ _['djoser-prefix'] }}"
+            },
+            "metaSortKey": -1723906804376.0625,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_5ce25b07588b4faf9da844f3acc8bf39",
+            "parentId": "fld_4a33d38ffff0415bb3bfe14cea811685",
+            "modified": 1724024082613,
+            "created": 1723910992318,
+            "url": "localhost:8000/api/orders",
+            "name": "20 Customer Place Order",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": []
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.3"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{ _.customer_token }}",
+                "prefix": "{{ _['djoser-prefix'] }}"
+            },
+            "metaSortKey": -1723906804276.0625,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_0a2ba55be30747deacd00b7385a38068",
+            "parentId": "fld_4a33d38ffff0415bb3bfe14cea811685",
+            "modified": 1724024539988,
+            "created": 1723911035140,
+            "url": "localhost:8000/api/orders",
+            "name": "21 Customer Browse Own Orders",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.3"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{ _.customer_token }}",
+                "prefix": "{{ _['djoser-prefix'] }}"
+            },
+            "metaSortKey": -1723906804176.0625,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_99d30891da4bdcebc63947a8fc17f076de878684",
+            "parentId": "wrk_scratchpad",
+            "modified": 1724034591405,
+            "created": 1723776507535,
+            "name": "Base Environment",
+            "data": {
+                "customer_token": "b67321ceb19b67f69ad5f3d41e771f7c1b438d53",
+                "djoser-prefix": "Token",
+                "customer-refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcyMzk1MTIxNSwiaWF0IjoxNzIzODY0ODE1LCJqdGkiOiJlYWQ5MTY0NDIxZDM0YjFjYjgxNGYyZWM0NDg1NGNhMCIsInVzZXJfaWQiOjd9.XJQh_up0V86ZZnAs9gIakXRUAfX82ytd0gLmPFKKoaE",
+                "admin-token": "4063dc334efd0fce60124ed83937e67631d67f22",
+                "manager_token": "350fb1269f728b7b54ddc27a0d83938021965dc4",
+                "delivery_crew_token": "8165155e19c8e9daf28b3430b71cd4043c5e4d6e",
+                "delivery_crew_2_token": "4fbdd4a785a2a812640aa6edf064f86fc9904662"
+            },
+            "dataPropertyOrder": {
+                "&": [
+                    "customer_token",
+                    "djoser-prefix",
+                    "customer-refresh_token",
+                    "admin-token",
+                    "manager_token",
+                    "delivery_crew_token",
+                    "delivery_crew_2_token"
+                ]
+            },
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1723776507535,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_99d30891da4bdcebc63947a8fc17f076de878684",
+            "parentId": "wrk_scratchpad",
+            "modified": 1724034591395,
+            "created": 1723776507583,
+            "name": "Default Jar",
+            "cookies": [
+                {
+                    "id": "5607ddee-6164-42f1-982f-a67f35ad6b14",
+                    "key": "csrftoken",
+                    "value": "6qXl2mRYyOwW29FGmFmclcQi7HGPzSV7",
+                    "expires": "2025-08-16T18:53:04.000Z",
+                    "domain": "localhost",
+                    "path": "/",
+                    "secure": false,
+                    "httpOnly": false,
+                    "extensions": [],
+                    "creation": "2024-08-17T18:52:52.750Z",
+                    "hostOnly": true,
+                    "lastAccessed": "2024-08-17T18:53:04.891Z"
+                }
+            ],
+            "_type": "cookie_jar"
+        }
+    ]
+}
