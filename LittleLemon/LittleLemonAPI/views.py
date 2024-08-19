@@ -169,14 +169,27 @@ class CartView(generics.ListCreateAPIView):
             Cart.objects.filter(user=request.user).delete()
             return JsonResponse(status=200, data={"message":"Cart is empty"})
     
-class DeliveryCrewView(generics.RetrieveUpdateAPIView):
+class DeliveryCrewGroupView(generics.ListCreateAPIView):
     throttle_classes = [AnonRateThrottle,UserRateThrottle]
-    permission_classes = [IsDeliveryCrew]
+    permission_classes = [IsAuthenticated,IsManager]
+    queryset = User.objects.filter(groups__name='Delivery Crew')
+    serializer_class = UserSerializer
     
-
-class ManagerView(generics.ListCreateAPIView):
-    permission_classes = [IsManager]
+    def post(self, *args, **kwargs):
+        if self.request.POST.get('username'):
+            delivery_crew = Group.objects.get(name='Delivery Crew')
+            user = get_object_or_404(User, username= self.request.POST.get('username'))
+            delivery_crew.user_set.add(user)
+            return JsonResponse(status=201,data={'message':'{} is added to delivery crew'.format(user.username)})
+        return JsonResponse(status=400, data={'message':'Bad request.'})
     
+    def delete(self, *args, **kwargs):
+        if self.request.POST.get('username'):
+            delivery_crew = Group.objects.get(name='Delivery Crew')
+            user = get_object_or_404(User, username= self.request.POST.get('username'))
+            delivery_crew.user_set.remove(user)
+            return JsonResponse(status=200,data={'message':'{} is removed from delivery crew'.format(user.username)})
+        return JsonResponse(status=400, data={'message':'Bad request.'})
     
 @api_view(['GET','POST','DELETE'])
 @permission_classes([IsAdminUser])
