@@ -1,5 +1,4 @@
 from rest_framework import permissions
-from django.contrib.auth.models import User
 
 class IsDeliveryCrew(permissions.BasePermission):
     edit_methods = ('put','patch')

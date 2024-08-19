@@ -1,9 +1,9 @@
-from datetime import datetime, time,date
+from datetime import datetime,date
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404
 from .throttles import TenCallsPerMinute
 from .pagination import MenuItemsPagination, CategoryPagination
-from .permissions import IsDeliveryCrew, IsManager
+from .permissions import IsManager
 from .models import Cart, Category, MenuItem, Order, OrderItem
 from .serializers import CategorySerializer, MenuItemSerializer, OrderSerializer, CartSerializer, UserSerializer
 from rest_framework.decorators import api_view
@@ -211,49 +211,3 @@ def managers(request):
                 managers.user_set.remove(user)
                 return JsonResponse(status=201,data={'message':'User {} is removed from manager group'.format(str(username))})   
     return JsonResponse(status=400,data ={'message':'Bad Request.'})
-
-
-# @api_view()
-# @permission_classes([IsAuthenticated])
-# def secret(request):
-#     return Response({"message":"Some Secret Message"})
-
-    
-
-# @api_view()
-# @permission_classes([IsAuthenticated])
-# def manager_view(request):
-#     if request.user.groups.filter(name='Manager').exists():
-#         return Response({"message":"Only Manager should see this message"})
-#     else:   
-#         return Response({"message":"You are not authorised"}, 403)
-    
-
-# @api_view()
-# @throttle_classes([AnonRateThrottle])
-# def throttle_check(request):
-#     return Response({"message": "sucessful"})
-
-# @api_view()
-# @permission_classes([IsAuthenticated])
-# @throttle_classes([UserRateThrottle])
-# def throttle_check_auth(request):
-#     return Response({"message":"Message for logged in user"})
-
-# @api_view()
-# @permission_classes([IsAuthenticated])
-# @throttle_classes([TenCallsPerMinute])
-# def throttle_check_custom(request):
-#     return Response({"message":"Message for logged in user 10 call per minute"})
-
-# @permission_classes([IsAuthenticated])
-# class MenuItemsViewSet(viewsets.ModelViewSet):
-#     queryset = MenuItem.objects.all()
-#     serializer_class = MenuItemSerializer
-    
-#     def get_throttles(self):
-#         if self.action == 'list':
-#             throttle_classes = [UserRateThrottle]
-#         else:
-#             throttle_classes = []
-#         return [throttle() for throttle in throttle_classes]
