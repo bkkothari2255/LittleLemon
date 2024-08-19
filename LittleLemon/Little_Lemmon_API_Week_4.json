@@ -443,7 +443,7 @@
             "authentication": {
                 "type": "bearer",
                 "prefix": "{{ _['djoser-prefix'] }}",
-                "token": "{{customer_token}}"
+                "token": "{{ _['admin-token'] }}"
             },
             "preRequestScript": "",
             "metaSortKey": -1723906882864.5,
@@ -499,7 +499,7 @@
             "authentication": {
                 "type": "bearer",
                 "prefix": "{{ _['djoser-prefix'] }}",
-                "token": "{{customer_token}}"
+                "token": "{{ _['admin-token'] }}"
             },
             "preRequestScript": "",
             "metaSortKey": -1723906834637,
