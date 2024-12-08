@@ -1,7 +1,6 @@
 from datetime import datetime,date
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404
-from requests import Response
 from .throttles import TenCallsPerMinute
 from .pagination import MenuItemsPagination, CategoryPagination
 from .permissions import IsManager
