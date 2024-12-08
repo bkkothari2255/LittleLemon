@@ -1,6 +1,7 @@
 from datetime import datetime,date
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404
+from requests import Response
 from .throttles import TenCallsPerMinute
 from .pagination import MenuItemsPagination, CategoryPagination
 from .permissions import IsManager
@@ -13,6 +14,12 @@ from rest_framework.throttling import AnonRateThrottle, UserRateThrottle
 from django.contrib.auth.models import Group, User
 from rest_framework import generics
 import math
+
+@api_view()
+@permission_classes([IsAuthenticated])
+# @authentication_classes([TokenAuthentication])
+def msg(request):
+    return JsonResponse(status=200, data={"message":"This view is protected"})
 
 class CategoryView(generics.ListCreateAPIView):
     throttle_classes = [AnonRateThrottle, UserRateThrottle]
